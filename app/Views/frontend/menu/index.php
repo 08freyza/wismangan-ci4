@@ -13,19 +13,19 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="assets/img/carousel-1.jpg" class="d-block w-100" alt="..." />
+                <img src="<?= base_url('frontend/assets/img/carousel-1.jpg') ?>" class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
-                <img src="assets/img/carousel-2.jpg" class="d-block w-100" alt="..." />
+                <img src="<?= base_url('frontend/assets/img/carousel-2.jpg') ?>" class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
-                <img src="assets/img/carousel-3.jpg" class="d-block w-100" alt="..." />
+                <img src="<?= base_url('frontend/assets/img/carousel-3.jpg') ?>" class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
-                <img src="assets/img/carousel-4.jpg" class="d-block w-100" alt="..." />
+                <img src="<?= base_url('frontend/assets/img/carousel-4.jpg') ?>" class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
-                <img src="assets/img/carousel-5.jpg" class="d-block w-100" alt="..." />
+                <img src="<?= base_url('frontend/assets/img/carousel-5.jpg') ?>" class="d-block w-100" alt="..." />
             </div>
         </div>
     </div>
@@ -75,7 +75,7 @@
                         <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
                             <div class="col">
                                 <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                                    <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                                    <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                                     <div class="card-body ps-0">
                                         <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                         <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -89,7 +89,7 @@
                             </div>
                             <div class="col">
                                 <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                                    <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                                    <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                                     <div class="card-body ps-0">
                                         <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                         <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -103,7 +103,7 @@
                             </div>
                             <div class="col">
                                 <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                                    <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                                    <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                                     <div class="card-body ps-0">
                                         <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                         <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -117,7 +117,7 @@
                             </div>
                             <div class="col">
                                 <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                                    <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                                    <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                                     <div class="card-body ps-0">
                                         <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                         <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -131,7 +131,7 @@
                             </div>
                             <div class="col">
                                 <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                                    <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                                    <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                                     <div class="card-body ps-0">
                                         <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                         <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -145,7 +145,7 @@
                             </div>
                             <div class="col">
                                 <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                                    <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                                    <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                                     <div class="card-body ps-0">
                                         <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                         <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -159,7 +159,7 @@
                             </div>
                             <div class="col">
                                 <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                                    <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                                    <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                                     <div class="card-body ps-0">
                                         <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                         <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -173,7 +173,7 @@
                             </div>
                             <div class="col">
                                 <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                                    <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                                    <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                                     <div class="card-body ps-0">
                                         <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                         <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -187,7 +187,7 @@
                             </div>
                             <div class="col">
                                 <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                                    <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                                    <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                                     <div class="card-body ps-0">
                                         <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                         <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -201,7 +201,7 @@
                             </div>
                             <div class="col">
                                 <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                                    <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                                    <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                                     <div class="card-body ps-0">
                                         <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                         <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -215,7 +215,7 @@
                             </div>
                             <div class="col">
                                 <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                                    <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                                    <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                                     <div class="card-body ps-0">
                                         <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                         <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -234,7 +234,7 @@
                         <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
                             <div class="col">
                                 <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                                    <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                                    <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                                     <div class="card-body ps-0">
                                         <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                         <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -248,7 +248,7 @@
                             </div>
                             <div class="col">
                                 <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                                    <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                                    <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                                     <div class="card-body ps-0">
                                         <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                         <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -262,7 +262,7 @@
                             </div>
                             <div class="col">
                                 <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                                    <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                                    <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                                     <div class="card-body ps-0">
                                         <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                         <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -276,7 +276,7 @@
                             </div>
                             <div class="col">
                                 <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                                    <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                                    <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                                     <div class="card-body ps-0">
                                         <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                         <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -290,7 +290,7 @@
                             </div>
                             <div class="col">
                                 <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                                    <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                                    <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                                     <div class="card-body ps-0">
                                         <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                         <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -304,7 +304,7 @@
                             </div>
                             <div class="col">
                                 <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                                    <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                                    <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                                     <div class="card-body ps-0">
                                         <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                         <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -318,7 +318,7 @@
                             </div>
                             <div class="col">
                                 <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                                    <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                                    <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                                     <div class="card-body ps-0">
                                         <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                         <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -332,7 +332,7 @@
                             </div>
                             <div class="col">
                                 <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                                    <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                                    <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                                     <div class="card-body ps-0">
                                         <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                         <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -351,7 +351,7 @@
                         <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
                             <div class="col">
                                 <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                                    <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                                    <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                                     <div class="card-body ps-0">
                                         <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                         <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -365,7 +365,7 @@
                             </div>
                             <div class="col">
                                 <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                                    <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                                    <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                                     <div class="card-body ps-0">
                                         <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                         <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -379,7 +379,7 @@
                             </div>
                             <div class="col">
                                 <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                                    <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                                    <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                                     <div class="card-body ps-0">
                                         <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                         <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -408,7 +408,7 @@
                 <!-- <div class="row row-cols-1 row-cols-md-4 g-4">
                     <div class="col">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                 <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -421,7 +421,7 @@
                     </div>
                     <div class="col">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                 <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -434,7 +434,7 @@
                     </div>
                     <div class="col">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                 <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -447,7 +447,7 @@
                     </div>
                     <div class="col">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                 <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -460,7 +460,7 @@
                     </div>
                     <div class="col">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                 <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -473,7 +473,7 @@
                     </div>
                     <div class="col">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                 <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -486,7 +486,7 @@
                     </div>
                     <div class="col">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                 <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -499,7 +499,7 @@
                     </div>
                     <div class="col">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                 <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -512,7 +512,7 @@
                     </div>
                     <div class="col">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                 <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -525,7 +525,7 @@
                     </div>
                     <div class="col">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                 <p class="card-text text-center mb-4">Rp. 23.000</p>
@@ -538,7 +538,7 @@
                     </div>
                     <div class="col">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
                                 <p class="card-text text-center mb-4">Rp. 23.000</p>

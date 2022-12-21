@@ -36,14 +36,21 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 
-// Frontenb
+// Frontend (Web Catalog)
 $routes->get('/', 'Frontend\Home::index');
 $routes->get('/promo', 'Frontend\Promo::index');
 $routes->get('/menu', 'Frontend\Menu::index');
 $routes->get('/about', 'Frontend\About::index');
 $routes->get('/contact', 'Frontend\Contact::index');
+$routes->get('/order', 'Frontend\Order::index');
+$routes->get('/order/payment', 'Frontend\Order::payment');
 $routes->get('/login', 'Frontend\Auth::login');
 $routes->get('/registration', 'Frontend\Auth::registration');
+// End Frontend (Web Catalog)
+
+// Backend (Admin Dashboard)
+$routes->get('/dashboard', 'Backend\Dashboard::index');
+// End Backend (Admin Dashboard)
 
 /*
  * --------------------------------------------------------------------

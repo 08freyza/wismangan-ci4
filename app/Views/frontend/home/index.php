@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-                <img src="assets/img/hero-img.png" class="img-fluid animated" alt="" />
+                <img src="<?= base_url('frontend/assets/img/hero-img.png') ?>" class="img-fluid animated" alt="" />
             </div>
         </div>
     </div>
@@ -33,7 +33,7 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h5 class="card-title">I Love Monday</h5>
                                 <p class="card-text" style="font-size: 13px">Diskon Rp 25.000,- hanya di WisMangan</p>
@@ -45,7 +45,7 @@
                     </div>
                     <div class="col">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h5 class="card-title">I Love Monday</h5>
                                 <p class="card-text" style="font-size: 13px">Diskon Rp 25.000,- hanya di WisMangan</p>
@@ -57,7 +57,7 @@
                     </div>
                     <div class="col">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h5 class="card-title">I Love Monday</h5>
                                 <p class="card-text" style="font-size: 13px">Diskon Rp 25.000,- hanya di WisMangan</p>
@@ -88,7 +88,7 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h5 class="card-title">I Love Monday</h5>
                                 <p class="card-text" style="font-size: 13px">Diskon Rp 25.000,- hanya di WisMangan</p>
@@ -98,7 +98,7 @@
                     </div>
                     <div class="col">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h5 class="card-title">I Love Monday</h5>
                                 <p class="card-text" style="font-size: 13px">Diskon Rp 25.000,- hanya di WisMangan</p>
@@ -108,7 +108,7 @@
                     </div>
                     <div class="col">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h5 class="card-title">I Love Monday</h5>
                                 <p class="card-text" style="font-size: 13px">Diskon Rp 25.000,- hanya di WisMangan</p>
@@ -137,7 +137,7 @@
                 <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="0.3s">
                     <div class="team-item text-center rounded overflow-hidden">
                         <div class="rounded-circle overflow-hidden m-4">
-                            <img class="img-fluid" src="assets/img/team-1.jpg" alt="" />
+                            <img class="img-fluid" src="<?= base_url('frontend/assets/img/team-1.jpg') ?>" alt="" />
                         </div>
                         <h5 class="mb-0">Jajang Suherman</h5>
                         <small>Jajang</small>
@@ -151,7 +151,7 @@
                 <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="0.3s">
                     <div class="team-item text-center rounded overflow-hidden">
                         <div class="rounded-circle overflow-hidden m-4">
-                            <img class="img-fluid" src="assets/img/team-2.jpg" alt="" />
+                            <img class="img-fluid" src="<?= base_url('frontend/assets/img/team-2.jpg') ?>" alt="" />
                         </div>
                         <h5 class="mb-0">Asep Karyadi</h5>
                         <small>Asep</small>
@@ -165,7 +165,7 @@
                 <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="0.3s">
                     <div class="team-item text-center rounded overflow-hidden">
                         <div class="rounded-circle overflow-hidden m-4">
-                            <img class="img-fluid" src="assets/img/team-3.jpg" alt="" />
+                            <img class="img-fluid" src="<?= base_url('frontend/assets/img/team-3.jpg') ?>" alt="" />
                         </div>
                         <h5 class="mb-0">Taufik Sukmo</h5>
                         <small>Taufik</small>
@@ -179,7 +179,7 @@
                 <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="0.3s">
                     <div class="team-item text-center rounded overflow-hidden">
                         <div class="rounded-circle overflow-hidden m-4">
-                            <img class="img-fluid" src="assets/img/team-4.jpg" alt="" />
+                            <img class="img-fluid" src="<?= base_url('frontend/assets/img/team-4.jpg') ?>" alt="" />
                         </div>
                         <h5 class="mb-0">Ujang Wangsa</h5>
                         <small>Ujang</small>

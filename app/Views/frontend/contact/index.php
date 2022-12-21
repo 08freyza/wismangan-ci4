@@ -1,42 +1,11 @@
 <?= $this->extend('layout/frontend/index'); ?>
 <?= $this->section('content'); ?>
 
-<!-- Hero -->
-<section id="carousel" class="d-flex align-items-center carousel-mt mb-0 pb-0">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/img/carousel-1.jpg" class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/carousel-2.jpg" class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/carousel-3.jpg" class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/carousel-4.jpg" class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/carousel-5.jpg" class="d-block w-100" alt="..." />
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Hero End -->
-
 <!-- Main -->
 <main id="main">
     <!-- Contact -->
     <section id="contact" class="contact section-bg">
-        <div class="container" data-aos="fade-up">
+        <div class="container mt-5 mb-5" data-aos="fade-up">
             <div class="section-title">
                 <h2>Hubungi Kami</h2>
                 <p>Silahkan sampaikan saran dan keluhan Anda, dengan mengisi form dibawah ini.</p>

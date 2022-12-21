@@ -1,42 +1,11 @@
 <?= $this->extend('layout/frontend/index'); ?>
 <?= $this->section('content'); ?>
 
-<!-- Hero -->
-<section id="carousel" class="d-flex align-items-center carousel-mt mb-0 pb-0">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/img/carousel-1.jpg" class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/carousel-2.jpg" class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/carousel-3.jpg" class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/carousel-4.jpg" class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/carousel-5.jpg" class="d-block w-100" alt="..." />
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Hero End -->
-
 <!-- Main -->
 <main id="main">
     <!-- About -->
     <section id="about" class="about">
-        <div class="container">
+        <div class="container mt-5 mb-5">
             <div class="section-title">
                 <h2>Tentang Kami</h2>
             </div>
@@ -45,16 +14,16 @@
                 <div class="col-lg-6">
                     <div class="row g-3">
                         <div class="col-6 text-start">
-                            <img class="img-fluid rounded w-100" data-aos="zoom-in" data-aos-delay="0.1s" src="assets/img/about-1.jpg" />
+                            <img class="img-fluid rounded w-100" data-aos="zoom-in" data-aos-delay="0.1s" src="<?= base_url('frontend/assets/img/about-1.jpg') ?>" />
                         </div>
                         <div class="col-6 text-start">
-                            <img class="img-fluid rounded w-75" data-aos="zoom-in" data-aos-delay="0.3s" src="assets/img/about-2.jpg" style="margin-top: 25%" />
+                            <img class="img-fluid rounded w-75" data-aos="zoom-in" data-aos-delay="0.3s" src="<?= base_url('frontend/assets/img/about-2.jpg') ?>" style="margin-top: 25%" />
                         </div>
                         <div class="col-6 text-end">
-                            <img class="img-fluid rounded w-75" data-aos="zoom-in" data-aos-delay="0.5s" src="assets/img/about-3.jpg" />
+                            <img class="img-fluid rounded w-75" data-aos="zoom-in" data-aos-delay="0.5s" src="<?= base_url('frontend/assets/img/about-3.jpg') ?>" />
                         </div>
                         <div class="col-6 text-end">
-                            <img class="img-fluid rounded w-100" data-aos="zoom-in" data-aos-delay="0.7s" src="assets/img/about-4.jpg" />
+                            <img class="img-fluid rounded w-100" data-aos="zoom-in" data-aos-delay="0.7s" src="<?= base_url('frontend/assets/img/about-4.jpg') ?>" />
                         </div>
                     </div>
                 </div>

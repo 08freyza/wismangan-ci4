@@ -13,19 +13,19 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="assets/img/carousel-1.jpg" class="d-block w-100" alt="..." />
+                <img src="<?= base_url('frontend/assets/img/carousel-1.jpg') ?>" class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
-                <img src="assets/img/carousel-2.jpg" class="d-block w-100" alt="..." />
+                <img src="<?= base_url('frontend/assets/img/carousel-2.jpg') ?>" class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
-                <img src="assets/img/carousel-3.jpg" class="d-block w-100" alt="..." />
+                <img src="<?= base_url('frontend/assets/img/carousel-3.jpg') ?>" class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
-                <img src="assets/img/carousel-4.jpg" class="d-block w-100" alt="..." />
+                <img src="<?= base_url('frontend/assets/img/carousel-4.jpg') ?>" class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
-                <img src="assets/img/carousel-5.jpg" class="d-block w-100" alt="..." />
+                <img src="<?= base_url('frontend/assets/img/carousel-5.jpg') ?>" class="d-block w-100" alt="..." />
             </div>
         </div>
     </div>
@@ -45,7 +45,7 @@
                 <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4">
                     <a class="col text-dark" href="#">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h5 class="card-title">I Love Monday</h5>
                                 <p class="card-text" style="font-size: 13px">Diskon Rp 25.000,- hanya di WisMangan</p>
@@ -57,7 +57,7 @@
                     </a>
                     <a class="col text-dark" href="#">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h5 class="card-title">I Love Monday</h5>
                                 <p class="card-text" style="font-size: 13px">Diskon Rp 25.000,- hanya di WisMangan</p>
@@ -69,7 +69,7 @@
                     </a>
                     <a class="col text-dark" href="#">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h5 class="card-title">I Love Monday</h5>
                                 <p class="card-text" style="font-size: 13px">Diskon Rp 25.000,- hanya di WisMangan</p>
@@ -81,7 +81,7 @@
                     </a>
                     <div class="col">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h5 class="card-title">I Love Monday</h5>
                                 <p class="card-text" style="font-size: 13px">Diskon Rp 25.000,- hanya di WisMangan</p>
@@ -93,7 +93,7 @@
                     </div>
                     <a class="col text-dark" href="#">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h5 class="card-title">I Love Monday</h5>
                                 <p class="card-text" style="font-size: 13px">Diskon Rp 25.000,- hanya di WisMangan</p>
@@ -105,7 +105,7 @@
                     </a>
                     <a class="col text-dark" href="#">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h5 class="card-title">I Love Monday</h5>
                                 <p class="card-text" style="font-size: 13px">Diskon Rp 25.000,- hanya di WisMangan</p>
@@ -117,7 +117,7 @@
                     </a>
                     <a class="col text-dark" href="#">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h5 class="card-title">I Love Monday</h5>
                                 <p class="card-text" style="font-size: 13px">Diskon Rp 25.000,- hanya di WisMangan</p>
@@ -129,7 +129,7 @@
                     </a>
                     <a class="col text-dark" href="#">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h5 class="card-title">I Love Monday</h5>
                                 <p class="card-text" style="font-size: 13px">Diskon Rp 25.000,- hanya di WisMangan</p>
@@ -141,7 +141,7 @@
                     </a>
                     <a class="col text-dark" href="#">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
+                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
                             <div class="card-body ps-0">
                                 <h5 class="card-title">I Love Monday</h5>
                                 <p class="card-text" style="font-size: 13px">Diskon Rp 25.000,- hanya di WisMangan</p>
