@@ -1668,6 +1668,26 @@ section {
     }
 }
 
+/* Login */
+.password-container{
+    /* width: 400px; */
+    position: relative;
+}
+
+.password-container input[type="password"],
+.password-container input[type="text"] {
+    width: 100%;
+    padding: 12px 36px 12px 12px;
+    box-sizing: border-box;
+}
+.bi-eye, .bi-eye-slash {
+    position: absolute;
+    top: 53%;
+    right: 6%;
+    cursor: pointer;
+    color: lightgray;
+}
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/

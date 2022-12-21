@@ -255,4 +255,26 @@
     });
   });
 
+  // Toogle Eye Icon Password
+
+  const togglePassword = document.querySelector('#togglePassword');
+  const toggleConfirmPassword = document.querySelector('#toggleConfirmPassword');
+  const password = document.querySelector('#password');
+  const confirmPassword = document.querySelector('#confirmpassword');
+  
+  togglePassword.addEventListener('click', () => {
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+
+    const className =  togglePassword.className === 'bi bi-eye' ? 'bi bi-eye-slash' : 'bi bi-eye';
+    togglePassword.setAttribute('class', className);
+  });
+
+  toggleConfirmPassword.addEventListener('click', () => {
+    const type = confirmPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+    confirmPassword.setAttribute('type', type);
+
+    const className =  toggleConfirmPassword.className === 'bi bi-eye' ? 'bi bi-eye-slash' : 'bi bi-eye';
+    toggleConfirmPassword.setAttribute('class', className);
+  });
 })()

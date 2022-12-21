@@ -1,6 +1,12 @@
 <?= $this->extend('layout/frontend/index'); ?>
 <?= $this->section('content'); ?>
 
+<?php if (session()->getFlashdata('customer')) : ?>
+    <div id="messageuser" class="d-none">
+        <?= session()->getFlashdata('customer'); ?>
+    </div>
+<?php endif; ?>
+
 <!-- main -->
 <main id="main">
     <!-- Promo -->
@@ -16,24 +22,25 @@
                     <div class="col-12 col-lg-6 col-md-8 col-sm-12 my-auto">
                         <div class="card card-rounded p-4">
                             <div class="card-body">
-                                <form>
+                                <form action="post">
                                     <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                        <input type="email" class="form-control rounded-pill px-3" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                        <label for="emailorusername" class="form-label">Email atau Username</label>
+                                        <input type="email" class="form-control rounded-pill px-3" id="emailorusername" name="emailorusername" aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">Kami tidak akan menyebarkan email Anda ke siapapun.</div>
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                                        <input type="password" class="form-control rounded-pill px-3" id="exampleInputPassword1">
+                                    <div class="mb-3 password-container">
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" class="form-control rounded-pill px-3" id="password" name="password">
+                                        <i class="bi bi-eye" id="togglePassword"></i>
                                     </div>
                                     <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                                        <input type="checkbox" class="form-check-input" id="rememberme">
+                                        <label class="form-check-label" for="rememberme">Ingat Saya</label>
                                     </div>
                                     <div class="mb-3">
                                         <button type="submit" class="btn btn-primary rounded-pill px-3 w-100">Login</button>
                                     </div>
-                                    <p class="form-text">Anda belum punya akun? Silakan registrasi <a href="<?= base_url('/registration') ?>">disini</a>.</p>
+                                    <p class="form-text text-center">Anda belum punya akun? Silakan registrasi <a href="<?= base_url('/registration') ?>">disini</a>.</p>
                                 </form>
                             </div>
                         </div>
