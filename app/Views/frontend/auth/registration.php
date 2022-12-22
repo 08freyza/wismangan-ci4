@@ -1,6 +1,12 @@
 <?= $this->extend('layout/frontend/index'); ?>
 <?= $this->section('content'); ?>
 
+<?php if (session()->getFlashdata('customerRegistration')) : ?>
+    <div id="message-registration-user" class="d-none">
+        <?= session()->getFlashdata('customerRegistration'); ?>
+    </div>
+<?php endif; ?>
+
 <!-- main -->
 <main id="main">
     <!-- Promo -->
@@ -16,7 +22,8 @@
                     <div class="col-12 col-lg-6 col-md-8 col-sm-12 my-auto">
                         <div class="card card-rounded p-4">
                             <div class="card-body">
-                                <form class="row g-3" action="post">
+                                <form class="row g-3" action="<?= base_url('/registration_process') ?>" method="post">
+                                    <?= csrf_field(); ?>
                                     <div class="col-md-6">
                                         <label for="firstname" class="form-label">Nama Awal</label>
                                         <input type="name" class="form-control rounded-pill px-3" id="firstname" name="firstname">
@@ -58,6 +65,10 @@
                                     <div class="col-md-6">
                                         <label for="zip" class="form-label">Kode Pos</label>
                                         <input type="text" class="form-control rounded-pill px-3" id="zip" name="zip">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="phone" class="form-label">Nomor Telepon</label>
+                                        <input type="tel" class="form-control rounded-pill px-3" id="phone" name="phone">
                                     </div>
                                     <div class="col-12 password-container">
                                         <label for="password" class="form-label">Password</label>

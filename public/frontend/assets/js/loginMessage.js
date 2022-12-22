@@ -1,7 +1,7 @@
-const messageUser = document.getElementById("messageuser");
+const messageUser = document.getElementById("message-login-user");
 
 if (messageUser) {
-  if (messageUser.innerHTML.trim() === "wrongPass") {
+  if (messageUser.innerHTML.trim() === "wrongPassword") {
     Swal.fire({
       title: "Login Gagal",
       text: "Password yang anda masukkan salah!",
@@ -10,7 +10,7 @@ if (messageUser) {
   } else {
     Swal.fire({
       title: "Login Gagal",
-      text: "Username atau email yang anda masukkan salah!",
+      text: "Email atau username yang anda masukkan salah!",
       icon: "error",
     });
   }

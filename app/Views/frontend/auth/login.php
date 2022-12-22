@@ -1,9 +1,9 @@
 <?= $this->extend('layout/frontend/index'); ?>
 <?= $this->section('content'); ?>
 
-<?php if (session()->getFlashdata('customer')) : ?>
-    <div id="messageuser" class="d-none">
-        <?= session()->getFlashdata('customer'); ?>
+<?php if (session()->getFlashdata('customerRegistration')) : ?>
+    <div id="message-registration-user" class="d-none">
+        <?= session()->getFlashdata('customerRegistration'); ?>
     </div>
 <?php endif; ?>
 
@@ -22,7 +22,8 @@
                     <div class="col-12 col-lg-6 col-md-8 col-sm-12 my-auto">
                         <div class="card card-rounded p-4">
                             <div class="card-body">
-                                <form action="post">
+                                <form action="<?= base_url('/login_process') ?>" method="post">
+                                    <?= csrf_field(); ?>
                                     <div class="mb-3">
                                         <label for="emailorusername" class="form-label">Email atau Username</label>
                                         <input type="email" class="form-control rounded-pill px-3" id="emailorusername" name="emailorusername" aria-describedby="emailHelp">

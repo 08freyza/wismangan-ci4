@@ -10,7 +10,9 @@ class Home extends BaseController
     {
         $data = [
             'title' => 'Wismangan | Indonesia Traditional Cuisine',
-            'navbar_active' => 'Home'
+            'navbar_active' => 'Home',
+            'script' => "<script src='" . base_url('frontend/assets/js/homeMessage.js') . "'></script>",
+            'validation' => \Config\Services::validation()
         ];
         return view('frontend/home/index', $data);
     }

@@ -1,6 +1,12 @@
 <?= $this->extend('layout/frontend/index'); ?>
 <?= $this->section('content'); ?>
 
+<?php if (session()->getFlashdata('customerLogStatus')) : ?>
+    <div id="message-home-user" class="d-none">
+        <?= session()->getFlashdata('customerLogStatus'); ?>
+    </div>
+<?php endif; ?>
+
 <!-- Hero Carousel -->
 <section id="hero" class="d-flex align-items-center pb-2">
     <div class="container">

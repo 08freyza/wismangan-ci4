@@ -45,7 +45,9 @@ $routes->get('/contact', 'Frontend\Contact::index');
 $routes->get('/order', 'Frontend\Order::index');
 $routes->get('/order/payment', 'Frontend\Order::payment');
 $routes->get('/login', 'Frontend\Auth::login');
+$routes->post('/login_process', 'Frontend\Auth::loginProcess');
 $routes->get('/registration', 'Frontend\Auth::registration');
+$routes->post('/registration_process', 'Frontend\Auth::registrationProcess');
 // End Frontend (Web Catalog)
 
 // Backend (Admin Dashboard)
