@@ -255,6 +255,10 @@
     });
   });
 
+  /** 
+   * Additional script by Freyza Kusuma
+   */
+
   // Toogle Eye Icon Password
 
   const togglePassword = document.querySelector('#togglePassword');
@@ -277,4 +281,49 @@
     const className =  toggleConfirmPassword.className === 'bi bi-eye' ? 'bi bi-eye-slash' : 'bi bi-eye';
     toggleConfirmPassword.setAttribute('class', className);
   });
+
+  // is-invalid class on password
+
+  const isInvalidClass = document.querySelector('.is-invalid');
+  const firstName = document.querySelector('#firstname');
+  const lastName = document.querySelector('#lastname');
+  const email = document.querySelector('#email');
+  const username = document.querySelector('#username');
+
+  if(isInvalidClass) {
+    firstName.addEventListener('input', () => {
+      const isInvalid = firstName
+      isInvalid.classList.remove("is-invalid")
+    });
+
+    lastName.addEventListener('input', () => {
+      const isInvalid = lastName
+      isInvalid.classList.remove("is-invalid")
+    });
+
+    email.addEventListener('input', () => {
+      const isInvalid = email
+      isInvalid.classList.remove("is-invalid")
+    });
+
+    username.addEventListener('input', () => {
+      const isInvalid = username
+      isInvalid.classList.remove("is-invalid")
+    });
+
+    password.addEventListener('input', () => {
+      const isInvalid = password
+      const eyeIcon = togglePassword
+      isInvalid.classList.remove("is-invalid")
+      eyeIcon.setAttribute('class', 'bi bi-eye');
+    });
+
+    confirmPassword.addEventListener('input', () => {
+      const isInvalid = confirmPassword
+      const eyeIcon = toggleConfirmPassword
+      isInvalid.classList.remove("is-invalid")
+      eyeIcon.setAttribute('class', 'bi bi-eye');
+    });
+  }
+
 })()

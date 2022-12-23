@@ -7,6 +7,9 @@ use App\Models\CustomerModel;
 
 class Auth extends BaseController
 {
+    protected $CustomerModel;
+    protected $validation;
+
     public function __construct()
     {
         $this->CustomerModel = new CustomerModel();
@@ -18,7 +21,6 @@ class Auth extends BaseController
         $data = [
             'title' => 'Registration',
             'navbar_active' => 'Registration',
-            'script' => "<script src='" . base_url('frontend/assets/js/registrationMessage.js') . "'></script>",
             'validation' => $this->validation
         ];
         return view('frontend/auth/registration', $data);
@@ -28,6 +30,18 @@ class Auth extends BaseController
     {
         // Rules
         $rules = [
+            'firstname' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Nama awal harus diisi'
+                ]
+            ],
+            'lastname' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Nama akhir harus diisi'
+                ]
+            ],
             'username' => [
                 'rules' => 'required|is_unique[customer.username]',
                 'errors' => [
@@ -38,6 +52,7 @@ class Auth extends BaseController
             'email' => [
                 'rules' => 'required|valid_email|is_unique[customer.email]',
                 'errors' => [
+                    'required' => 'Email harus diisi',
                     'valid_email' => 'Email tidak valid',
                     'is_unique' => 'Email sudah terdaftar'
                 ]
@@ -76,25 +91,27 @@ class Auth extends BaseController
             $password = $this->request->getVar('password');
             $confirmPassword = $this->request->getVar('confirmpassword');
 
-            // Concate string
-            $fullAddress = ucwords($address) . ', ' . ucwords($city) . ', ' . ucwords($province) . ', ' . $state . ' ' . $zip;
-
             // Insert data
-            $a = $this->CustomerModel->save([
+            $dataForInsert = [
                 'first_name' => ucwords($firstName),
                 'last_name' => ucwords($lastName),
-                'address' => $fullAddress,
+                'address' => ucwords($address) . ', ' . ucwords($city) . ', ' . ucwords($province) . ', ' . $state . ' ' . $zip,
                 'email' => $email,
                 'phone' => $phone,
                 'username' => $username,
                 'password' => password_hash($password, PASSWORD_DEFAULT),
                 'active' => 'Y'
-            ]);
-            // Back to login page
-            return redirect()->to('login');
+            ];
+
+            if (isset($dataForInsert)) {
+                $this->CustomerModel->insert($dataForInsert);
+            }
 
             // Message
-            session()->setFlashdata('customerRegistration', 'successRegistration');
+            session()->setFlashdata('message', 'successRegistration');
+
+            // Back to login page
+            return redirect()->to('login');
         }
     }
 
@@ -103,7 +120,6 @@ class Auth extends BaseController
         $data = [
             'title' => 'Login',
             'navbar_active' => 'Login',
-            'script' => "<script src='" . base_url('frontend/assets/js/loginMessage.js') . "'></script>",
             'validation' => $this->validation
         ];
         return view('frontend/auth/login', $data);
@@ -133,20 +149,20 @@ class Auth extends BaseController
                 session()->set($dataSession);
 
                 // Message
-                session()->setFlashdata('customerLogStatus', 'successLogin');
+                session()->setFlashdata('message', 'successLogin');
 
                 // Back to home page
                 return redirect()->to('');
             } else {
                 // Message
-                session()->setFlashdata('customerLogin', 'wrongPassword');
+                session()->setFlashdata('message', 'wrongPassword');
 
                 // Back to login page
                 return redirect()->to('login');
             }
         } else {
             // Message
-            session()->setFlashdata('customerLogin', 'wrongEmailUsername');
+            session()->setFlashdata('message', 'wrongEmailUsername');
 
             // Back to login page
             return redirect()->to('login');
@@ -159,7 +175,7 @@ class Auth extends BaseController
         session()->destroy();
 
         // Message
-        session()->setFlashdata('customerLogStatus', 'successLogout');
+        session()->setFlashdata('message', 'successLogout');
 
         // Back to home page
         return redirect()->to('');

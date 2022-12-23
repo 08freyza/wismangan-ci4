@@ -1,9 +1,9 @@
 <?= $this->extend('layout/frontend/index'); ?>
 <?= $this->section('content'); ?>
 
-<?php if (session()->getFlashdata('customerRegistration')) : ?>
-    <div id="message-registration-user" class="d-none">
-        <?= session()->getFlashdata('customerRegistration'); ?>
+<?php if (session()->getFlashdata('message')) : ?>
+    <div id="message-notify-frontend" class="d-none">
+        <?= session()->getFlashdata('message'); ?>
     </div>
 <?php endif; ?>
 
