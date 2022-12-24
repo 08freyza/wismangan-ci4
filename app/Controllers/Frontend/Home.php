@@ -4,29 +4,29 @@ namespace App\Controllers\Frontend;
 
 use App\Controllers\BaseController;
 use App\Models\CustomerModel;
-// use Faker\Extension\Helper;
 
 class Home extends BaseController
 {
     protected $CustomerModel;
-    // protected $loginCheckHelper;
     protected $validation;
 
     public function __construct()
     {
         $this->CustomerModel = new CustomerModel();
-        // $this->loginCheckHelper = loginCheck();
         $this->validation = \Config\Services::validation();
     }
 
     public function index()
     {
+        helper(['login_check_helper']);
+
         $data = [
             'title' => 'Wismangan | Indonesia Traditional Cuisine',
             'navbar_active' => 'Home',
-            'script' => "<script src='" . base_url('frontend/assets/js/mainMessage.js') . "'></script>",
             'validation' => $this->validation,
+            'login_check' => loginCheck(),
         ];
-        return view('frontend/home/index', $data);
+
+        return view('frontend/home', $data);
     }
 }

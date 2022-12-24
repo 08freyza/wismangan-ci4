@@ -26,7 +26,7 @@
                                     <?= csrf_field(); ?>
                                     <div class="mb-3">
                                         <label for="emailorusername" class="form-label">Email atau Username</label>
-                                        <input type="email" class="form-control rounded-pill px-3" id="emailorusername" name="emailorusername" aria-describedby="emailHelp">
+                                        <input type="text" class="form-control rounded-pill px-3" id="emailorusername" name="emailorusername" aria-describedby="emailHelp">
                                         <div id="emailHelp" class="form-text">Kami tidak akan menyebarkan email Anda ke siapapun.</div>
                                     </div>
                                     <div class="mb-3 password-container">

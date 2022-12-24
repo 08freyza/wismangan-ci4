@@ -37,10 +37,13 @@
 
 <body>
     <!-- Header -->
-    <header id="header" class="fixed-top <?= $navbar_active != 'Home' ? 'anti-header-scrolled' : '' ?>">
+    <header id="header" class="fixed-top <?= $navbar_active != 'Home' ? 'shadow anti-header-scrolled' : '' ?>">
         <div class="container d-flex align-items-center">
             <h1 class="logo me-auto">
-                <a href="index.html"><img src="<?= base_url("frontend/assets/img/logo.png") ?>" alt="" class="img-fluid" width="" /> WisMangan</a>
+                <a href="index.html">
+                    <!-- <img src="<?= base_url("frontend/assets/img/logo.png") ?>" alt="" class="img-fluid" width="" /> -->
+                    WisMangan
+                </a>
             </h1>
 
             <!-- Navbar -->

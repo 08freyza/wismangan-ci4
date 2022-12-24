@@ -9,11 +9,11 @@ function loginCheck()
         if ($statusLog) {
             if (session()->get('username')) {
                 $username = session()->get('username');
-                $customerData = $CustomerModel->select('customer_id, username')->where('username', $username)->first();
+                $customerData = $CustomerModel->select('customer_id, username, first_name')->where('username', $username)->first();
                 if ($customerData) {
                     if (session()->get('key')) {
                         $key = session()->get('key');
-                        if (password_verify($customerData['id'], $key)) {
+                        if (password_verify($customerData['customer_id'], $key)) {
                             $data['user'] = $customerData;
                             $data['key'] = $key;
                             $data['login_status'] = session()->get('login_status');

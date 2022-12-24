@@ -19,8 +19,8 @@ class Auth extends BaseController
     public function registration()
     {
         $data = [
-            'title' => 'Registration',
-            'navbar_active' => 'Registration',
+            'title' => 'Registrasi',
+            'navbar_active' => 'Registrasi',
             'validation' => $this->validation
         ];
         return view('frontend/auth/registration', $data);
@@ -58,10 +58,10 @@ class Auth extends BaseController
                 ]
             ],
             'password' => [
-                'rules' => 'required|min_length[5]',
+                'rules' => 'required|min_length[6]',
                 'errors' => [
                     'required' => 'Password harus diisi',
-                    'min_length' => 'Password minimal 5 karakter'
+                    'min_length' => 'Password minimal 6 karakter'
                 ]
             ],
             'confirmpassword' => [
@@ -74,7 +74,6 @@ class Auth extends BaseController
         ];
 
         if (!$this->validate($rules)) {
-            // return redirect()->back()->with('validation', $this->validation);
             return redirect()->to('/registration')->withInput()->with('validation', $this->validation);
         } else {
             // Get data

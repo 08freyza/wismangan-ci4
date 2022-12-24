@@ -89,7 +89,7 @@
 
                 <div class="col-lg-3 col-md-6 footer-links">
                     <h4>Sosial Media Kami</h4>
-                    <p>Mari terhubung bersama kami</p>
+                    <p>Terhubung bersama kami</p>
                     <div class="social-links mt-3">
                         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -107,8 +107,8 @@
             &copy; <?= date('Y') ?> Copyright <strong><span>WisMangan</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
-            Powered by
-            <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            Made by
+            <a href="https://github.com/08freyza">Freyza Kusuma</a>
         </div>
     </div>
 </footer>

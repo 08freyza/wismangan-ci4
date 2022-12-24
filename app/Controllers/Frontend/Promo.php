@@ -8,11 +8,14 @@ class Promo extends BaseController
 {
     public function index()
     {
+        helper(['login_check_helper']);
+
         $data = [
             'title' => 'Promo',
-            'navbar_active' => 'Promo'
+            'navbar_active' => 'Promo',
+            'login_check' => loginCheck()
         ];
 
-        return view('frontend/promo/index', $data);
+        return view('frontend/promo', $data);
     }
 }

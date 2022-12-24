@@ -45,7 +45,8 @@ h6 {
     bottom: 0;
     z-index: 9999;
     overflow: hidden;
-    background: #37517e;
+    /* background: #37517e; */
+    background: rgba(40, 58, 90, 1);
 }
 
 #preloader:before {
@@ -127,7 +128,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-    background: rgba(40, 58, 90, 0.9);
+    background: rgba(40, 58, 90, 1);
 }
 
 #header .logo {
@@ -176,7 +177,7 @@ h6 {
 .navbar button:focus {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     /* padding: 10px 0 10px 30px; */
     padding: 10px 20px 10px 20px;
     font-size: 15px;
@@ -201,6 +202,7 @@ h6 {
 .navbar .active:focus {
     /* color: #e85d04; */
     color: #e85d04;
+    /* font-weight: 500; */
     /* color: #fff; */
 }
 
@@ -228,32 +230,51 @@ h6 {
     background: #e85d04;
 }
 
+.navbar .getstarted i {
+    padding: 0 10px 0 0;
+}
+
 .navbar .dropdown ul {
     display: block;
     position: absolute;
-    left: 14px;
+    justify-content: center;
+    /* left: 10px; */
+    right: 0;
     top: calc(100% + 30px);
-    margin: 0;
-    padding: 10px 0;
+    margin: auto;
+    padding-top:  3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
     z-index: 99;
     opacity: 0;
     visibility: hidden;
     background: #fff;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
     transition: 0.3s;
-    border-radius: 4px;
+    border-radius: 15px;
+    width: 160px;
 }
 
 .navbar .dropdown ul li {
-    min-width: 200px;
+    min-width: 100px;
 }
 
 .navbar .dropdown ul a {
-    padding: 10px 20px;
+    padding: 12px 20px 3px;
     font-size: 14px;
     text-transform: none;
     font-weight: 500;
     color: #370617;
+}
+
+
+.navbar .cart-dropdown ul a {
+    padding: 12px 12px 3px;
+}
+
+.navbar .dropdown ul a:last-child {
+    padding-bottom: 12px;
 }
 
 .navbar .dropdown ul a i {
@@ -284,6 +305,10 @@ h6 {
     top: 0;
     left: 100%;
     visibility: visible;
+}
+
+.special-dropdown {
+    width: 100%;
 }
 
 @media (max-width: 1366px) {
@@ -367,8 +392,10 @@ h6 {
 }
 
 .navbar-mobile .getstarted {
-    margin: 15px;
-    color: #37517e;
+    margin: auto;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
 }
 
 .navbar-mobile .dropdown ul {
@@ -404,6 +431,10 @@ h6 {
 
 .navbar-mobile .dropdown > .dropdown-active {
     display: block;
+}
+
+.navbar-mobile .special-dropdown {
+    width: 95%;
 }
 
 .btn-warning,
@@ -1735,7 +1766,8 @@ section {
 --------------------------------------------------------------*/
 #footer {
     font-size: 14px;
-    background: #37517e;
+    /* background: #37517e; */
+    background: rgba(40, 58, 90, 1);
 }
 
 #footer .footer-newsletter {
