@@ -7,9 +7,10 @@
     <section id="about" class="about">
         <div class="container rounded bg-white mt-5 mb-5">
             <div class="row">
-                <div class="col-md-6 border-right">
+                <div class="col-md-1"></div>
+                <div class="col-md-5 border-right">
                     <div class="d-flex flex-column align-items-center text-center p-3 py-5">
-                        <img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
+                        <img class="rounded-circle mt-5" width="200px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
                         <!-- <span class="font-weight-bold">Edogaru</span>
                         <span class="text-black-50">edogaru@mail.com.my</span> -->
                         <a class="btn btn-outline-danger profile-button rounded-pill px-4 mt-3" href="<?= base_url('/profile/delete'); ?>">Hapus Akun</a>

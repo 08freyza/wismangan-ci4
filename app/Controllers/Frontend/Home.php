@@ -4,6 +4,7 @@ namespace App\Controllers\Frontend;
 
 use App\Controllers\BaseController;
 use App\Models\CustomerModel;
+use App\Models\MenuModel;
 
 class Home extends BaseController
 {

@@ -18,80 +18,74 @@
         </li>
         <?php if(isset($login_check) && $login_check['login_status']) : ?>
             <li class="dropdown">
-                <a class="getstarted" href="#">
+                <a class="getstarted" href="<?= base_url('cart'); ?>" style="width: 170px">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <span>Keranjang (4) </span>
                 </a>
-                <ul class="dropdown dropdown-menu mt-1 special-dropdown cart-dropdown" style="right: -82px; width: 340px;">
-                    <li>
-                        <div class="row">
-                            <a href="<?= base_url('/cart'); ?>" class="justify-content-start" style="margin: 4px 7px 0px 4px; padding-bottom: 3px; padding-right: 35px; color: black;">
-                                <div class="col-2">
-                                    <img src="<?= base_url('frontend/assets/img/test.png'); ?>" alt="red" width="50" height="50">
+                <ul class="dropdown dropdown-menu mt-1 special-dropdown cart-dropdown py-2" style="right: -82px; width: 340px;">
+                    <div class="row overflow-auto pe-0" style="height: 238px; width: 340px;">
+                        <li class="p-0">
+                            <a href="<?= base_url('/cart'); ?>" class="justify-content-center" style="margin: 2px 4px 2px 4px; padding: 12px 18px 12px 18px; color: black;">
+                                <div class="col-3">
+                                    <img src="<?= base_url('frontend/assets/img/test.png'); ?>" alt="red" width="50" height="50" class="ms-2">
                                 </div>
-                                <div class="col-6 ms-2">
-                                    <h5 class="mb-0">Ayam Betutu</h5>
+                                <div class="col-6">
+                                    <h5 class="mb-0 text-truncate">Ayam Betutu</h5>
                                     <p class="mb-0 mt-1" style="font-size: 12px;">Rp. 25.000</p>
                                 </div>
-                                <div class="col-4 align-items-center">
-                                    <h5 class="mb-0 text-end" style="font-size: 16px;">1 Porsi</h5>
+                                <div class="col-3 align-items-center">
+                                    <h5 class="mb-0 text-end me-2" style="font-size: 16px;">1 Pt</h5>
                                 </div>
                             </a>
-                        </div>
-                    </li>
-                    <hr>
-                    <li>
-                        <div class="row">
-                            <a href="<?= base_url('/cart'); ?>" class="justify-content-start" style="margin: 4px 7px 0px 4px; padding-bottom: 3px; padding-right: 35px; color: black; padding-top: 2px;">
-                                <div class="col-2">
-                                    <img src="<?= base_url('frontend/assets/img/test.png'); ?>" alt="red" width="50" height="50">
+                            <hr class="m-auto" style="width: 87%;">
+                        </li>
+                        <li class="p-0">
+                            <a href="<?= base_url('/cart'); ?>" class="justify-content-center" style="margin: 2px 4px 2px 4px; padding: 12px 18px 12px 18px; color: black;">
+                                <div class="col-3">
+                                    <img src="<?= base_url('frontend/assets/img/test.png'); ?>" alt="red" width="50" height="50" class="ms-2">
                                 </div>
-                                <div class="col-6 ms-2">
-                                    <h5 class="mb-0">Ayam Betutu</h5>
+                                <div class="col-6">
+                                    <h5 class="mb-0 text-truncate">Ayam Betutu</h5>
                                     <p class="mb-0 mt-1" style="font-size: 12px;">Rp. 25.000</p>
                                 </div>
-                                <div class="col-4 align-items-center">
-                                    <h5 class="mb-0 text-end" style="font-size: 16px;">1 Porsi</h5>
+                                <div class="col-3 align-items-center">
+                                    <h5 class="mb-0 text-end me-2" style="font-size: 16px;">1 Pt</h5>
                                 </div>
                             </a>
-                        </div>
-                    </li>
-                    <hr>
-                    <li>
-                        <div class="row">
-                            <a href="<?= base_url('/cart'); ?>" class="justify-content-start" style="margin: 4px 7px 0px 4px; padding-bottom: 3px; padding-right: 35px; color: black; padding-top: 2px;">
-                                <div class="col-2">
-                                    <img src="<?= base_url('frontend/assets/img/test.png'); ?>" alt="red" width="50" height="50">
+                            <hr class="m-auto" style="width: 87%;">
+                        </li>
+                        <li class="p-0">
+                            <a href="<?= base_url('/cart'); ?>" class="justify-content-center" style="margin: 2px 4px 2px 4px; padding: 12px 18px 12px 18px; color: black;">
+                                <div class="col-3">
+                                    <img src="<?= base_url('frontend/assets/img/test.png'); ?>" alt="red" width="50" height="50" class="ms-2">
                                 </div>
-                                <div class="col-6 ms-2">
-                                    <h5 class="mb-0">Ayam Betutu</h5>
+                                <div class="col-6">
+                                    <h5 class="mb-0 text-truncate">Ayam Betutu</h5>
                                     <p class="mb-0 mt-1" style="font-size: 12px;">Rp. 25.000</p>
                                 </div>
-                                <div class="col-4 align-items-center">
-                                    <h5 class="mb-0 text-end" style="font-size: 16px;">1 Porsi</h5>
+                                <div class="col-3 align-items-center">
+                                    <h5 class="mb-0 text-end me-2" style="font-size: 16px;">1 Pt</h5>
                                 </div>
                             </a>
-                        </div>
-                    </li>
-                    <hr>
-                    <li>
-                        <div class="row">
-                            <a href="<?= base_url('/cart'); ?>" class="justify-content-start" style="margin: 4px 7px 0px 4px; padding-bottom: 3px; padding-right: 35px; color: black; padding-top: 2px;">
-                                <div class="col-2">
-                                    <img src="<?= base_url('frontend/assets/img/test.png'); ?>" alt="red" width="50" height="50">
+                            <hr class="m-auto" style="width: 87%;">
+                        </li>
+                        <li class="p-0">
+                            <a href="<?= base_url('/cart'); ?>" class="justify-content-center" style="margin: 2px 4px 2px 4px; padding: 12px 18px 12px 18px; color: black;">
+                                <div class="col-3">
+                                    <img src="<?= base_url('frontend/assets/img/test.png'); ?>" alt="red" width="50" height="50" class="ms-2">
                                 </div>
-                                <div class="col-6 ms-2">
-                                    <h5 class="mb-0">Ayam Betutu</h5>
+                                <div class="col-6">
+                                    <h5 class="mb-0 text-truncate">Nasi Goreng Original</h5>
                                     <p class="mb-0 mt-1" style="font-size: 12px;">Rp. 25.000</p>
                                 </div>
-                                <div class="col-4 align-items-center">
-                                    <h5 class="mb-0 text-end" style="font-size: 16px;">1 Porsi</h5>
+                                <div class="col-3 align-items-center">
+                                    <h5 class="mb-0 text-end me-2" style="font-size: 16px;">1 Pt</h5>
                                 </div>
                             </a>
-                        </div>
-                    </li>
-                    <hr>
-                    <li><a href="<?= base_url('/cart'); ?>" class="text-bold text-black" style="padding-bottom: 14px; padding-top: 2px;">Lihat semua</a></li>
+                            <hr class="m-auto" style="width: 87%;">
+                        </li>
+                    </div>
+                    <li><a href="<?= base_url('/cart'); ?>" class="text-bold text-black" style="padding-bottom: 12px; padding-top: 12px;">Lihat semua</a></li>
                 </ul>
             </li>
             <li class="dropdown dropdown-menu-right">
@@ -108,7 +102,7 @@
             </li>
         <?php else : ?>
             <li>
-                <a class="getstarted" href="<?= base_url('/login') ?>" style="width: 160px;">
+                <a class="getstarted" href="<?= base_url('/login') ?>" style="width: 170px;">
                     <i class="fa-solid fa-user"></i>
                     <span>Login </span>
                 </a>

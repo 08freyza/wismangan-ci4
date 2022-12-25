@@ -40,6 +40,7 @@ $routes->set404Override();
 $routes->get('/', 'Frontend\Home::index');
 $routes->get('/promo', 'Frontend\Promo::index');
 $routes->get('/menu', 'Frontend\Menu::index');
+$routes->get('/menu/(:any)', 'Frontend\Menu::detail/$1');
 $routes->get('/about', 'Frontend\About::index');
 $routes->get('/contact', 'Frontend\Contact::index');
 $routes->get('/profile', 'Frontend\User::index');
