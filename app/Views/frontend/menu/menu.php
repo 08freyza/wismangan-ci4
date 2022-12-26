@@ -72,18 +72,19 @@
                 <div class="tab-content" id="pills-tabContent">
                     <!-- semua -->
                     <div class="tab-pane fade show active" id="pills-semua" role="tabpanel" aria-labelledby="pills-semua-tab" tabindex="0">
-                        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
+                        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 g-4">
                             <?php foreach ($data as $all) : ?>
                                 <div class="col">
                                     <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
                                         <img src="<?= base_url('frontend/assets/img/' . $all['image']) ?>" class="card-img-top" alt="<?= $all['image']; ?>" style="border-radius: 20px" />
-                                        <div class="card-body ps-0">
-                                            <h4 class="card-title text-center mb-3"><?= $all['name']; ?></h4>
-                                            <p class="card-text text-center mb-4" style="font-size: 18px;"><?= 'Rp. ' . number_format($all['price'], 0, ',', '.'); ?></p>
-                                            <div class="card-text d-flex justify-content-center">
+                                        <div class="card-body ps-0 pe-0">
+                                            <h5 class="card-title text-center mb-2"><?= $all['name']; ?></h5>
+                                            <p class="card-text text-center mb-2" style="font-size: 18px;"><?= 'Rp. ' . number_format($all['price'], 0, ',', '.'); ?></p>
+                                            <div class="card-text d-flex justify-content-center mb-2">
                                                 <a href="<?= base_url('menu/' . str_replace(' ', '-', strtolower($all['name']))); ?>" class="btn btn-link rounded-pill px-4">Detail</a>
-                                                <br>
-                                                <button class="btn btn-warning rounded-pill px-3"><i class="fa-solid fa-plus"></i> Order</button>
+                                            </div>
+                                            <div class="card-text d-flex justify-content-center">
+                                                <button class="btn btn-warning rounded-pill px-4 w-50 py-2"><i class="fa-solid fa-plus"></i> Order</button>
                                             </div>
                                         </div>
                                     </div>
@@ -93,19 +94,20 @@
                     </div>
                     <!-- sarapan -->
                     <div class="tab-pane fade" id="pills-sarapan" role="tabpanel" aria-labelledby="pills-sarapan-tab" tabindex="0">
-                        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
+                        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 g-4">
                             <?php foreach ($data as $all) : ?>
                                 <?php if (strpos($all['product_type'], "SP") !== false ) : ?>
                                     <div class="col">
                                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
                                             <img src="<?= base_url('frontend/assets/img/' . $all['image']) ?>" class="card-img-top" alt="<?= $all['image']; ?>" style="border-radius: 20px" />
-                                            <div class="card-body ps-0">
-                                                <h4 class="card-title text-center mb-3"><?= $all['name']; ?></h4>
-                                                <p class="card-text text-center mb-4" style="font-size: 18px;"><?= 'Rp. ' . number_format($all['price'], 0, ',', '.'); ?></p>
-                                                <div class="card-text d-flex justify-content-center">
+                                            <div class="card-body ps-0 pe-0">
+                                                <h5 class="card-title text-center mb-2"><?= $all['name']; ?></h5>
+                                                <p class="card-text text-center mb-2" style="font-size: 18px;"><?= 'Rp. ' . number_format($all['price'], 0, ',', '.'); ?></p>
+                                                <div class="card-text d-flex justify-content-center mb-2">
                                                     <a href="<?= base_url('menu/' . str_replace(' ', '-', strtolower($all['name']))); ?>" class="btn btn-link rounded-pill px-4">Detail</a>
-                                                    <br>
-                                                    <button class="btn btn-warning rounded-pill px-3"><i class="fa-solid fa-plus"></i> Order</button>
+                                                </div>
+                                                <div class="card-text d-flex justify-content-center">
+                                                    <button class="btn btn-warning rounded-pill px-4 w-50 py-2"><i class="fa-solid fa-plus"></i> Order</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -116,19 +118,20 @@
                     </div>
                     <!-- utama -->
                     <div class="tab-pane fade" id="pills-utama" role="tabpanel" aria-labelledby="pills-utama-tab" tabindex="0">
-                        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
+                        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 g-4">
                             <?php foreach ($data as $all) : ?>
                                 <?php if (strpos($all['product_type'], "MU") !== false ) : ?>
                                     <div class="col">
                                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
                                             <img src="<?= base_url('frontend/assets/img/' . $all['image']) ?>" class="card-img-top" alt="<?= $all['image']; ?>" style="border-radius: 20px" />
-                                            <div class="card-body ps-0">
-                                                <h4 class="card-title text-center mb-3"><?= $all['name']; ?></h4>
-                                                <p class="card-text text-center mb-4" style="font-size: 18px;"><?= 'Rp. ' . number_format($all['price'], 0, ',', '.'); ?></p>
-                                                <div class="card-text d-flex justify-content-center">
+                                            <div class="card-body ps-0 pe-0">
+                                                <h5 class="card-title text-center mb-2"><?= $all['name']; ?></h5>
+                                                <p class="card-text text-center mb-2" style="font-size: 18px;"><?= 'Rp. ' . number_format($all['price'], 0, ',', '.'); ?></p>
+                                                <div class="card-text d-flex justify-content-center mb-2">
                                                     <a href="<?= base_url('menu/' . str_replace(' ', '-', strtolower($all['name']))); ?>" class="btn btn-link rounded-pill px-4">Detail</a>
-                                                    <br>
-                                                    <button class="btn btn-warning rounded-pill px-3"><i class="fa-solid fa-plus"></i> Order</button>
+                                                </div>
+                                                <div class="card-text d-flex justify-content-center">
+                                                    <button class="btn btn-warning rounded-pill px-4 w-50 py-2"><i class="fa-solid fa-plus"></i> Order</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -142,19 +145,20 @@
                         <!-- <div class="row g-4">
                             <h4 class="text-center">Maaf, data tidak ditemukan.</h4>
                         </div> -->
-                        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
+                        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 g-4">
                             <?php foreach ($data as $all) : ?>
                                 <?php if (strpos($all['product_type'], "MA") !== false ) : ?>
                                     <div class="col">
                                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
                                             <img src="<?= base_url('frontend/assets/img/' . $all['image']) ?>" class="card-img-top" alt="<?= $all['image']; ?>" style="border-radius: 20px" />
-                                            <div class="card-body ps-0">
-                                                <h4 class="card-title text-center mb-3"><?= $all['name']; ?></h4>
-                                                <p class="card-text text-center mb-4" style="font-size: 18px;"><?= 'Rp. ' . number_format($all['price'], 0, ',', '.'); ?></p>
-                                                <div class="card-text d-flex justify-content-center">
+                                            <div class="card-body ps-0 pe-0">
+                                                <h5 class="card-title text-center mb-2"><?= $all['name']; ?></h5>
+                                                <p class="card-text text-center mb-2" style="font-size: 18px;"><?= 'Rp. ' . number_format($all['price'], 0, ',', '.'); ?></p>
+                                                <div class="card-text d-flex justify-content-center mb-2">
                                                     <a href="<?= base_url('menu/' . str_replace(' ', '-', strtolower($all['name']))); ?>" class="btn btn-link rounded-pill px-4">Detail</a>
-                                                    <br>
-                                                    <button class="btn btn-warning rounded-pill px-3"><i class="fa-solid fa-plus"></i> Order</button>
+                                                </div>
+                                                <div class="card-text d-flex justify-content-center">
+                                                    <button class="btn btn-warning rounded-pill px-4 w-50 py-2"><i class="fa-solid fa-plus"></i> Order</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -165,19 +169,20 @@
                     </div>
                     <!-- ikan -->
                     <div class="tab-pane fade" id="pills-ikan" role="tabpanel" aria-labelledby="pills-ikan-tab" tabindex="0">
-                        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
+                        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 g-4">
                             <?php foreach ($data as $all) : ?>
                                 <?php if (strpos($all['product_type'], "MI") !== false ) : ?>
                                     <div class="col">
                                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
                                             <img src="<?= base_url('frontend/assets/img/' . $all['image']) ?>" class="card-img-top" alt="<?= $all['image']; ?>" style="border-radius: 20px" />
-                                            <div class="card-body ps-0">
-                                                <h4 class="card-title text-center mb-3"><?= $all['name']; ?></h4>
-                                                <p class="card-text text-center mb-4" style="font-size: 18px;"><?= 'Rp. ' . number_format($all['price'], 0, ',', '.'); ?></p>
-                                                <div class="card-text d-flex justify-content-center">
+                                            <div class="card-body ps-0 pe-0">
+                                                <h5 class="card-title text-center mb-2"><?= $all['name']; ?></h5>
+                                                <p class="card-text text-center mb-2" style="font-size: 18px;"><?= 'Rp. ' . number_format($all['price'], 0, ',', '.'); ?></p>
+                                                <div class="card-text d-flex justify-content-center mb-2">
                                                     <a href="<?= base_url('menu/' . str_replace(' ', '-', strtolower($all['name']))); ?>" class="btn btn-link rounded-pill px-4">Detail</a>
-                                                    <br>
-                                                    <button class="btn btn-warning rounded-pill px-3"><i class="fa-solid fa-plus"></i> Order</button>
+                                                </div>
+                                                <div class="card-text d-flex justify-content-center">
+                                                    <button class="btn btn-warning rounded-pill px-4 w-50 py-2"><i class="fa-solid fa-plus"></i> Order</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -188,20 +193,21 @@
                     </div>
                     <!-- sup -->
                     <div class="tab-pane fade" id="pills-sup" role="tabpanel" aria-labelledby="pills-sup-tab" tabindex="0">
-                        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
+                        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 g-4">
                             <?php foreach ($data as $all) : ?>
                                 <?php if (strpos($all['product_type'], "SP") === false) : ?>
                                     <?php if (strpos($all['product_type'], "S") !== false) : ?>
                                         <div class="col">
                                             <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
                                                 <img src="<?= base_url('frontend/assets/img/' . $all['image']) ?>" class="card-img-top" alt="<?= $all['image']; ?>" style="border-radius: 20px" />
-                                                <div class="card-body ps-0">
-                                                    <h4 class="card-title text-center mb-3"><?= $all['name']; ?></h4>
-                                                    <p class="card-text text-center mb-4" style="font-size: 18px;"><?= 'Rp. ' . number_format($all['price'], 0, ',', '.'); ?></p>
-                                                    <div class="card-text d-flex justify-content-center">
+                                                <div class="card-body ps-0 pe-0">
+                                                    <h5 class="card-title text-center mb-2"><?= $all['name']; ?></h5>
+                                                    <p class="card-text text-center mb-2" style="font-size: 18px;"><?= 'Rp. ' . number_format($all['price'], 0, ',', '.'); ?></p>
+                                                    <div class="card-text d-flex justify-content-center mb-2">
                                                         <a href="<?= base_url('menu/' . str_replace(' ', '-', strtolower($all['name']))); ?>" class="btn btn-link rounded-pill px-4">Detail</a>
-                                                        <br>
-                                                        <button class="btn btn-warning rounded-pill px-3"><i class="fa-solid fa-plus"></i> Order</button>
+                                                    </div>
+                                                    <div class="card-text d-flex justify-content-center">
+                                                        <button class="btn btn-warning rounded-pill px-4 w-50 py-2"><i class="fa-solid fa-plus"></i> Order</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -213,19 +219,20 @@
                     </div>
                     <!-- penutup -->
                     <div class="tab-pane fade" id="pills-penutup" role="tabpanel" aria-labelledby="pills-penutup-tab" tabindex="0">
-                        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
+                        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 g-4">
                             <?php foreach ($data as $all) : ?>
                                 <?php if (strpos($all['product_type'], "HP") !== false ) : ?>
                                     <div class="col">
                                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
                                             <img src="<?= base_url('frontend/assets/img/' . $all['image']) ?>" class="card-img-top" alt="<?= $all['image']; ?>" style="border-radius: 20px" />
-                                            <div class="card-body ps-0">
-                                                <h4 class="card-title text-center mb-3"><?= $all['name']; ?></h4>
-                                                <p class="card-text text-center mb-4" style="font-size: 18px;"><?= 'Rp. ' . number_format($all['price'], 0, ',', '.'); ?></p>
-                                                <div class="card-text d-flex justify-content-center">
+                                            <div class="card-body ps-0 pe-0">
+                                                <h5 class="card-title text-center mb-2"><?= $all['name']; ?></h5>
+                                                <p class="card-text text-center mb-2" style="font-size: 18px;"><?= 'Rp. ' . number_format($all['price'], 0, ',', '.'); ?></p>
+                                                <div class="card-text d-flex justify-content-center mb-2">
                                                     <a href="<?= base_url('menu/' . str_replace(' ', '-', strtolower($all['name']))); ?>" class="btn btn-link rounded-pill px-4">Detail</a>
-                                                    <br>
-                                                    <button class="btn btn-warning rounded-pill px-3"><i class="fa-solid fa-plus"></i> Order</button>
+                                                </div>
+                                                <div class="card-text d-flex justify-content-center">
+                                                    <button class="btn btn-warning rounded-pill px-4 w-50 py-2"><i class="fa-solid fa-plus"></i> Order</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -236,20 +243,21 @@
                     </div>
                     <!-- minuman -->
                     <div class="tab-pane fade" id="pills-minuman" role="tabpanel" aria-labelledby="pills-minuman-tab" tabindex="0">
-                        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
+                        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 g-4">
                             <?php foreach ($data as $all) : ?>
                                 <?php if (strpos($all['product_type'], "MU") === false) : ?>
                                     <?php if (strpos($all['product_type'], "M") !== false) : ?>
                                         <div class="col">
                                             <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
                                                 <img src="<?= base_url('frontend/assets/img/' . $all['image']) ?>" class="card-img-top" alt="<?= $all['image']; ?>" style="border-radius: 20px" />
-                                                <div class="card-body ps-0">
-                                                    <h4 class="card-title text-center mb-3"><?= $all['name']; ?></h4>
-                                                    <p class="card-text text-center mb-4" style="font-size: 18px;"><?= 'Rp. ' . number_format($all['price'], 0, ',', '.'); ?></p>
-                                                    <div class="card-text d-flex justify-content-center">
+                                                <div class="card-body ps-0 pe-0">
+                                                    <h5 class="card-title text-center mb-2"><?= $all['name']; ?></h5>
+                                                    <p class="card-text text-center mb-2" style="font-size: 18px;"><?= 'Rp. ' . number_format($all['price'], 0, ',', '.'); ?></p>
+                                                    <div class="card-text d-flex justify-content-center mb-2">
                                                         <a href="<?= base_url('menu/' . str_replace(' ', '-', strtolower($all['name']))); ?>" class="btn btn-link rounded-pill px-4">Detail</a>
-                                                        <br>
-                                                        <button class="btn btn-warning rounded-pill px-3"><i class="fa-solid fa-plus"></i> Order</button>
+                                                    </div>
+                                                    <div class="card-text d-flex justify-content-center">
+                                                        <button class="btn btn-warning rounded-pill px-4 w-50 py-2"><i class="fa-solid fa-plus"></i> Order</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -260,152 +268,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- <div class="row row-cols-1 row-cols-md-4 g-4">
-                    <div class="col">
-                        <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
-                            <div class="card-body ps-0">
-                                <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
-                                <p class="card-text text-center mb-4">Rp. 23.000</p>
-                                <div class="card-text d-flex justify-content-between ms-4 me-4">
-                                    <button class="btn btn-outline-info rounded-pill px-4">Detail</button>
-                                    <button class="btn btn-warning rounded-pill px-4">Order</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
-                            <div class="card-body ps-0">
-                                <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
-                                <p class="card-text text-center mb-4">Rp. 23.000</p>
-                                <div class="card-text d-flex justify-content-between ms-4 me-4">
-                                    <button class="btn btn-outline-info rounded-pill px-4">Detail</button>
-                                    <button class="btn btn-warning rounded-pill px-4">Order</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
-                            <div class="card-body ps-0">
-                                <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
-                                <p class="card-text text-center mb-4">Rp. 23.000</p>
-                                <div class="card-text d-flex justify-content-between ms-4 me-4">
-                                    <button class="btn btn-outline-info rounded-pill px-4">Detail</button>
-                                    <button class="btn btn-warning rounded-pill px-4">Order</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
-                            <div class="card-body ps-0">
-                                <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
-                                <p class="card-text text-center mb-4">Rp. 23.000</p>
-                                <div class="card-text d-flex justify-content-between ms-4 me-4">
-                                    <button class="btn btn-outline-info rounded-pill px-4">Detail</button>
-                                    <button class="btn btn-warning rounded-pill px-4">Order</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
-                            <div class="card-body ps-0">
-                                <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
-                                <p class="card-text text-center mb-4">Rp. 23.000</p>
-                                <div class="card-text d-flex justify-content-between ms-4 me-4">
-                                    <button class="btn btn-outline-info rounded-pill px-4">Detail</button>
-                                    <button class="btn btn-warning rounded-pill px-4">Order</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
-                            <div class="card-body ps-0">
-                                <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
-                                <p class="card-text text-center mb-4">Rp. 23.000</p>
-                                <div class="card-text d-flex justify-content-between ms-4 me-4">
-                                    <button class="btn btn-outline-info rounded-pill px-4">Detail</button>
-                                    <button class="btn btn-warning rounded-pill px-4">Order</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
-                            <div class="card-body ps-0">
-                                <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
-                                <p class="card-text text-center mb-4">Rp. 23.000</p>
-                                <div class="card-text d-flex justify-content-between ms-4 me-4">
-                                    <button class="btn btn-outline-info rounded-pill px-4">Detail</button>
-                                    <button class="btn btn-warning rounded-pill px-4">Order</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
-                            <div class="card-body ps-0">
-                                <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
-                                <p class="card-text text-center mb-4">Rp. 23.000</p>
-                                <div class="card-text d-flex justify-content-between ms-4 me-4">
-                                    <button class="btn btn-outline-info rounded-pill px-4">Detail</button>
-                                    <button class="btn btn-warning rounded-pill px-4">Order</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
-                            <div class="card-body ps-0">
-                                <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
-                                <p class="card-text text-center mb-4">Rp. 23.000</p>
-                                <div class="card-text d-flex justify-content-between ms-4 me-4">
-                                    <button class="btn btn-outline-info rounded-pill px-4">Detail</button>
-                                    <button class="btn btn-warning rounded-pill px-4">Order</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
-                            <div class="card-body ps-0">
-                                <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
-                                <p class="card-text text-center mb-4">Rp. 23.000</p>
-                                <div class="card-text d-flex justify-content-between ms-4 me-4">
-                                    <button class="btn btn-outline-info rounded-pill px-4">Detail</button>
-                                    <button class="btn btn-warning rounded-pill px-4">Order</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
-                            <img src="<?= base_url('frontend/assets/img/1.jpg') ?>" class="card-img-top" alt="..." style="border-radius: 20px" />
-                            <div class="card-body ps-0">
-                                <h4 class="card-title text-center mb-3">Ayam Betutu</h4>
-                                <p class="card-text text-center mb-4">Rp. 23.000</p>
-                                <div class="card-text d-flex justify-content-between ms-4 me-4">
-                                    <button class="btn btn-outline-info rounded-pill px-4">Detail</button>
-                                    <button class="btn btn-warning rounded-pill px-4">Order</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>

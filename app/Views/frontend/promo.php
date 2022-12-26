@@ -41,7 +41,7 @@
                 <h2>Promo</h2>
             </div>
 
-            <div class="row content">
+            <div class="row content justify-content-center">
                 <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4">
                     <a class="col text-dark" href="#">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">

@@ -32,7 +32,7 @@
                                 <p class="fst-italic"><?= $data['address']; ?></p>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-3 mt-2">
                             <h4 class="text-right">Data kontak</h4>
                         </div>
                         <div class="row mt-2">
@@ -46,8 +46,8 @@
                             </div>
                         </div>
                         <div class="mt-3 text-start">
-                            <a class="btn btn-info profile-button me-2 rounded-pill px-4" href="<?= base_url('/profile/edit'); ?>">Ubah Profil</a>
-                            <a class="btn btn-info profile-button me-2 rounded-pill px-4" href="<?= base_url('/profile/password'); ?>">Ubah Password</a>
+                            <a class="btn btn-secondary profile-button me-2 rounded-pill px-4 mb-2" href="<?= base_url('/profile/edit'); ?>" style="width: 167px;">Ubah Profil</a>
+                            <a class="btn btn-secondary profile-button me-2 rounded-pill px-4 mb-2" href="<?= base_url('/profile/password'); ?>" style="width: 167px;">Ubah Password</a>
                         </div>
                     </div>
                 </div>

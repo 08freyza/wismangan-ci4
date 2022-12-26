@@ -104,11 +104,10 @@
 
     <div class="container footer-bottom clearfix">
         <div class="copyright">
-            &copy; <?= date('Y') ?> Copyright <strong><span>WisMangan</span></strong>. All Rights Reserved
+            &copy; <?= date('Y') ?> <strong><span>Wismangan</span></strong>. All Rights Reserved.
         </div>
         <div class="credits">
-            Made by
-            <a href="https://github.com/08freyza">Freyza Kusuma</a>
+            Made by <strong><span>Freyza & Friends</span></strong>
         </div>
     </div>
 </footer>

@@ -15,7 +15,7 @@
                 <h1>Cita Rasa Nusantara Yang Tidak Boleh Dilewatkan</h1>
                 <h2>Dengan bahan yang berkualitas dan bumbu yang khas, menjadikan suatu perpaduan yang sempurna</h2>
                 <div class="d-flex justify-content-center justify-content-lg-start">
-                    <a href="#" class="btn btn-warning rounded-pill px-4 py-3 fw-bold" style="font-size: 14px">Pesan Sekarang</a>
+                    <a href="#" class="btn btn-warning rounded-pill px-5 py-3 fw-bold" style="font-size: 14px">Pesan Sekarang</a>
                 </div>
             </div>
             <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
@@ -35,7 +35,7 @@
                 <h2>Promo</h2>
             </div>
 
-            <div class="row content">
+            <div class="row content justify-content-center">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
@@ -76,8 +76,8 @@
                 </div>
             </div>
 
-            <div class="d-flex justify-content-center mt-4">
-                <a href="<?= base_url('/promo') ?>" class="btn btn-warning rounded-pill px-4 py-3 fw-bold" style="font-size: 14px">Lihat Semua Promo</a>
+            <div class="d-flex justify-content-center mt-5">
+                <a href="<?= base_url('/promo') ?>" class="btn btn-warning rounded-pill px-5 py-3 fw-bold" style="font-size: 14px">Lihat Semua Promo</a>
             </div>
         </div>
     </section>
@@ -90,7 +90,7 @@
                 <h2>Menu</h2>
             </div>
 
-            <div class="row content">
+            <div class="row content justify-content-center">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card px-3 pt-3 pb-2 shadow p-3" style="border-radius: 20px">
@@ -125,8 +125,8 @@
                 </div>
             </div>
 
-            <div class="d-flex justify-content-center mt-4">
-                <a href="<?= base_url('/menu') ?>" class="btn btn-warning rounded-pill px-4 py-3 fw-bold" style="font-size: 14px">Lihat Semua Menu</a>
+            <div class="d-flex justify-content-center mt-5">
+                <a href="<?= base_url('/menu') ?>" class="btn btn-warning rounded-pill px-5 py-3 fw-bold" style="font-size: 14px">Lihat Semua Menu</a>
             </div>
         </div>
     </section>
@@ -214,7 +214,7 @@
                         <div class="icon">
                             <i class="bx bxs-user"></i>
                         </div>
-                        <h4><a href="">Koki Yang Berpengalaman</a></h4>
+                        <h4><a href="">Koki Berpengalaman</a></h4>
                         <p>Kami memiliki koki dengan pengalaman yang banyak dan dengan jam terbang yang tinggi.</p>
                     </div>
                 </div>
@@ -233,7 +233,7 @@
                             <i class="bx bxs-cart-add"></i>
                         </div>
                         <h4><a href="">Pemesanan Online</a></h4>
-                        <p>Kami antar pesanan Anda, kapanpun dan dimanapun.</p>
+                        <p>Kami antar pesanan Anda, kapanpun dan dimanapun dengan menggunakan jasa pengiriman kami.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">

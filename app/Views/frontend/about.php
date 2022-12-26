@@ -28,13 +28,13 @@
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
-                    <h1 class="mb-4">Selamat Datang di WisMangan</h1>
+                    <h1 class="mb-4">Selamat Datang di Wismangan</h1>
                     <p class="mb-4">Kami berdiri sejak tahun 2015. Kami menyediakan aneka masakan rumahan yang tidak bisa Anda lewatkan.</p>
                     <p class="mb-4">Dengan racikan bumbu dan resep yang kami buat serta kualitas masakan yang sempurna. Kami menyediakannya sesuai cita rasa khas masakan asli nusantara.</p>
                     <div class="row g-4 mb-4">
                         <div class="col-sm-6">
-                            <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                                <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">7</h1>
+                            <div class="d-flex align-items-center border-start border-5 border-danger px-3">
+                                <h1 class="flex-shrink-0 display-5 text-warning mb-0" data-toggle="counter-up"><?= date('Y') - 2015; ?></h1>
                                 <div class="ps-4">
                                     <p class="mb-0">Tahun</p>
                                     <h6 class="text-uppercase mb-0">Berdiri</h6>
@@ -42,8 +42,8 @@
                             </div>
                         </div>
                         <div class="col-sm-6">
-                            <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                                <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">10</h1>
+                            <div class="d-flex align-items-center border-start border-5 border-danger px-3">
+                                <h1 class="flex-shrink-0 display-5 text-warning mb-0" data-toggle="counter-up">10</h1>
                                 <div class="ps-4">
                                     <p class="mb-0">Koki</p>
                                     <h6 class="text-uppercase mb-0">Terbaik</h6>

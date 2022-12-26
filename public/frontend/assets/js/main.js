@@ -2,6 +2,7 @@
 * Template Name: Arsha - v4.3.0
 * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
 * Author: BootstrapMade.com
+* Modified by: Freyza F.K
 * License: https://bootstrapmade.com/license/
 */
 (function() {
@@ -83,10 +84,10 @@
     const headerScrolled = () => {
       if (window.scrollY > 100 || selectHeaderScrolled) {
         selectHeader.classList.add('header-scrolled')
-        selectHeader.classList.add('shadow')
+        selectHeader.classList.add('shadow-lg')
       } else {
         selectHeader.classList.remove('header-scrolled')
-        selectHeader.classList.remove('shadow')
+        selectHeader.classList.remove('shadow-lg')
       }
     }
     window.addEventListener('load', headerScrolled)
@@ -121,7 +122,7 @@
   /**
    * Mobile nav dropdowns activate
    */
-  on('click', '.navbar .dropdown > a', function(e) {
+  on('click', '.navbar .user-dropdown > a', function(e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()
       this.nextElementSibling.classList.toggle('dropdown-active')
@@ -326,6 +327,15 @@
       isInvalid.classList.remove("is-invalid")
       eyeIcon.setAttribute('class', 'bi bi-eye');
     });
+  }
+
+  // Cart dropdown won't be showed on mobile mode
+  let cartDropdown = document.querySelector('.cart-dropdown')
+
+  if (select('#navbar').classList.contains('navbar-mobile')) {
+    cartDropdown.classList.add('d-block')
+  } else {
+    cartDropdown.classList.remove('d-block')
   }
 
 })()
