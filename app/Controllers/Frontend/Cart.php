@@ -46,15 +46,24 @@ class Cart extends ResourceController
 
     public function create()
     {
-        $data = [
-            'customer_id' => $this->request->getVar('customer_id'),
-            'product_id' => $this->request->getVar('product_id'),
-            'quantity' => $this->request->getVar('quantity'),
-            'status_cart' => $this->request->getVar('status_cart'),
-        ];
+        $jsonData = $this->request->getJSON();
+        if ($jsonData) {
+            $data = [
+                'customer_id' => $jsonData->customer_id,
+                'product_id' => $jsonData->product_id,
+                'quantity' => $jsonData->quantity,
+                'status_cart' => $jsonData->status_cart,
+            ];
+        } else {
+            $data = [
+                'customer_id' => $this->request->getVar('customer_id'),
+                'product_id' => $this->request->getVar('product_id'),
+                'quantity' => $this->request->getVar('quantity'),
+                'status_cart' => $this->request->getVar('status_cart'),
+            ];
+        }
 
         $this->CartModel->insert($data);
-
         $data = json_decode(file_get_contents("php://input"));
 
         $response = [

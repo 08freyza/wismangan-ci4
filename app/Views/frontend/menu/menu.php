@@ -83,9 +83,21 @@
                                             <div class="card-text d-flex justify-content-center mb-2">
                                                 <a href="<?= base_url('menu/' . str_replace(' ', '-', strtolower($all['name']))); ?>" class="btn btn-link rounded-pill px-4">Detail</a>
                                             </div>
-                                            <div class="card-text d-flex justify-content-center">
-                                                <button class="btn btn-warning rounded-pill px-4 w-50 py-2"><i class="fa-solid fa-plus"></i> Order</button>
-                                            </div>
+                                            <?php if (isset($login_check) && $login_check['login_status']) : ?>
+                                                <form>
+                                                    <div class="card-text d-flex justify-content-center">
+                                                        <input type="hidden" id="customer_id" name="customer_id" value="<?= $login_check['user']['customer_id']; ?>">
+                                                        <input type="hidden" id="customer_id" name="product_id" value="<?= $all['product_id']; ?>">
+                                                        <input type="hidden" id="customer_id" name="quantity" value="1">
+                                                        <input type="hidden" id="customer_id" name="status_cart" value="A">
+                                                        <button class="btn btn-warning rounded-pill px-4 w-75 py-2"><i class="fa-solid fa-plus"></i> Order</button>
+                                                    </div>
+                                                </form>
+                                            <?php else : ?>
+                                                <div class="card-text d-flex justify-content-center">
+                                                    <button class="btn btn-warning rounded-pill px-4 w-75 py-2"><i class="fa-solid fa-plus"></i> Order</button>
+                                                </div>
+                                            <?php endif; ?>
                                         </div>
                                     </div>
                                 </div>
@@ -106,9 +118,21 @@
                                                 <div class="card-text d-flex justify-content-center mb-2">
                                                     <a href="<?= base_url('menu/' . str_replace(' ', '-', strtolower($all['name']))); ?>" class="btn btn-link rounded-pill px-4">Detail</a>
                                                 </div>
-                                                <div class="card-text d-flex justify-content-center">
-                                                    <button class="btn btn-warning rounded-pill px-4 w-50 py-2"><i class="fa-solid fa-plus"></i> Order</button>
-                                                </div>
+                                                <?php if (isset($login_check) && $login_check['login_status']) : ?>
+                                                    <form>
+                                                        <div class="card-text d-flex justify-content-center">
+                                                            <input type="hidden" id="customer_id" name="customer_id" value="<?= $login_check['user']['customer_id']; ?>">
+                                                            <input type="hidden" id="customer_id" name="product_id" value="<?= $all['product_id']; ?>">
+                                                            <input type="hidden" id="customer_id" name="quantity" value="1">
+                                                            <input type="hidden" id="customer_id" name="status_cart" value="A">
+                                                            <button class="btn btn-warning rounded-pill px-4 w-75 py-2"><i class="fa-solid fa-plus"></i> Order</button>
+                                                        </div>
+                                                    </form>
+                                                <?php else : ?>
+                                                    <div class="card-text d-flex justify-content-center">
+                                                        <button class="btn btn-warning rounded-pill px-4 w-75 py-2"><i class="fa-solid fa-plus"></i> Order</button>
+                                                    </div>
+                                                <?php endif; ?>
                                             </div>
                                         </div>
                                     </div>
@@ -130,9 +154,21 @@
                                                 <div class="card-text d-flex justify-content-center mb-2">
                                                     <a href="<?= base_url('menu/' . str_replace(' ', '-', strtolower($all['name']))); ?>" class="btn btn-link rounded-pill px-4">Detail</a>
                                                 </div>
-                                                <div class="card-text d-flex justify-content-center">
-                                                    <button class="btn btn-warning rounded-pill px-4 w-50 py-2"><i class="fa-solid fa-plus"></i> Order</button>
-                                                </div>
+                                                <?php if (isset($login_check) && $login_check['login_status']) : ?>
+                                                    <form>
+                                                        <div class="card-text d-flex justify-content-center">
+                                                            <input type="hidden" id="customer_id" name="customer_id" value="<?= $login_check['user']['customer_id']; ?>">
+                                                            <input type="hidden" id="customer_id" name="product_id" value="<?= $all['product_id']; ?>">
+                                                            <input type="hidden" id="customer_id" name="quantity" value="1">
+                                                            <input type="hidden" id="customer_id" name="status_cart" value="A">
+                                                            <button class="btn btn-warning rounded-pill px-4 w-75 py-2"><i class="fa-solid fa-plus"></i> Order</button>
+                                                        </div>
+                                                    </form>
+                                                <?php else : ?>
+                                                    <div class="card-text d-flex justify-content-center">
+                                                        <button class="btn btn-warning rounded-pill px-4 w-75 py-2"><i class="fa-solid fa-plus"></i> Order</button>
+                                                    </div>
+                                                <?php endif; ?>
                                             </div>
                                         </div>
                                     </div>
@@ -157,9 +193,21 @@
                                                 <div class="card-text d-flex justify-content-center mb-2">
                                                     <a href="<?= base_url('menu/' . str_replace(' ', '-', strtolower($all['name']))); ?>" class="btn btn-link rounded-pill px-4">Detail</a>
                                                 </div>
-                                                <div class="card-text d-flex justify-content-center">
-                                                    <button class="btn btn-warning rounded-pill px-4 w-50 py-2"><i class="fa-solid fa-plus"></i> Order</button>
-                                                </div>
+                                                <?php if (isset($login_check) && $login_check['login_status']) : ?>
+                                                    <form>
+                                                        <div class="card-text d-flex justify-content-center">
+                                                            <input type="hidden" id="customer_id" name="customer_id" value="<?= $login_check['user']['customer_id']; ?>">
+                                                            <input type="hidden" id="customer_id" name="product_id" value="<?= $all['product_id']; ?>">
+                                                            <input type="hidden" id="customer_id" name="quantity" value="1">
+                                                            <input type="hidden" id="customer_id" name="status_cart" value="A">
+                                                            <button class="btn btn-warning rounded-pill px-4 w-75 py-2"><i class="fa-solid fa-plus"></i> Order</button>
+                                                        </div>
+                                                    </form>
+                                                <?php else : ?>
+                                                    <div class="card-text d-flex justify-content-center">
+                                                        <button class="btn btn-warning rounded-pill px-4 w-75 py-2"><i class="fa-solid fa-plus"></i> Order</button>
+                                                    </div>
+                                                <?php endif; ?>
                                             </div>
                                         </div>
                                     </div>
@@ -181,9 +229,21 @@
                                                 <div class="card-text d-flex justify-content-center mb-2">
                                                     <a href="<?= base_url('menu/' . str_replace(' ', '-', strtolower($all['name']))); ?>" class="btn btn-link rounded-pill px-4">Detail</a>
                                                 </div>
-                                                <div class="card-text d-flex justify-content-center">
-                                                    <button class="btn btn-warning rounded-pill px-4 w-50 py-2"><i class="fa-solid fa-plus"></i> Order</button>
-                                                </div>
+                                                <?php if (isset($login_check) && $login_check['login_status']) : ?>
+                                                    <form>
+                                                        <div class="card-text d-flex justify-content-center">
+                                                            <input type="hidden" id="customer_id" name="customer_id" value="<?= $login_check['user']['customer_id']; ?>">
+                                                            <input type="hidden" id="customer_id" name="product_id" value="<?= $all['product_id']; ?>">
+                                                            <input type="hidden" id="customer_id" name="quantity" value="1">
+                                                            <input type="hidden" id="customer_id" name="status_cart" value="A">
+                                                            <button class="btn btn-warning rounded-pill px-4 w-75 py-2"><i class="fa-solid fa-plus"></i> Order</button>
+                                                        </div>
+                                                    </form>
+                                                <?php else : ?>
+                                                    <div class="card-text d-flex justify-content-center">
+                                                        <button class="btn btn-warning rounded-pill px-4 w-75 py-2"><i class="fa-solid fa-plus"></i> Order</button>
+                                                    </div>
+                                                <?php endif; ?>
                                             </div>
                                         </div>
                                     </div>
@@ -206,9 +266,21 @@
                                                     <div class="card-text d-flex justify-content-center mb-2">
                                                         <a href="<?= base_url('menu/' . str_replace(' ', '-', strtolower($all['name']))); ?>" class="btn btn-link rounded-pill px-4">Detail</a>
                                                     </div>
-                                                    <div class="card-text d-flex justify-content-center">
-                                                        <button class="btn btn-warning rounded-pill px-4 w-50 py-2"><i class="fa-solid fa-plus"></i> Order</button>
-                                                    </div>
+                                                    <?php if (isset($login_check) && $login_check['login_status']) : ?>
+                                                        <form>
+                                                            <div class="card-text d-flex justify-content-center">
+                                                                <input type="hidden" id="customer_id" name="customer_id" value="<?= $login_check['user']['customer_id']; ?>">
+                                                                <input type="hidden" id="customer_id" name="product_id" value="<?= $all['product_id']; ?>">
+                                                                <input type="hidden" id="customer_id" name="quantity" value="1">
+                                                                <input type="hidden" id="customer_id" name="status_cart" value="A">
+                                                                <button class="btn btn-warning rounded-pill px-4 w-75 py-2"><i class="fa-solid fa-plus"></i> Order</button>
+                                                            </div>
+                                                        </form>
+                                                    <?php else : ?>
+                                                        <div class="card-text d-flex justify-content-center">
+                                                            <button class="btn btn-warning rounded-pill px-4 w-75 py-2"><i class="fa-solid fa-plus"></i> Order</button>
+                                                        </div>
+                                                    <?php endif; ?>
                                                 </div>
                                             </div>
                                         </div>
@@ -231,9 +303,21 @@
                                                 <div class="card-text d-flex justify-content-center mb-2">
                                                     <a href="<?= base_url('menu/' . str_replace(' ', '-', strtolower($all['name']))); ?>" class="btn btn-link rounded-pill px-4">Detail</a>
                                                 </div>
-                                                <div class="card-text d-flex justify-content-center">
-                                                    <button class="btn btn-warning rounded-pill px-4 w-50 py-2"><i class="fa-solid fa-plus"></i> Order</button>
-                                                </div>
+                                                <?php if (isset($login_check) && $login_check['login_status']) : ?>
+                                                    <form>
+                                                        <div class="card-text d-flex justify-content-center">
+                                                            <input type="hidden" id="customer_id" name="customer_id" value="<?= $login_check['user']['customer_id']; ?>">
+                                                            <input type="hidden" id="customer_id" name="product_id" value="<?= $all['product_id']; ?>">
+                                                            <input type="hidden" id="customer_id" name="quantity" value="1">
+                                                            <input type="hidden" id="customer_id" name="status_cart" value="A">
+                                                            <button class="btn btn-warning rounded-pill px-4 w-75 py-2"><i class="fa-solid fa-plus"></i> Order</button>
+                                                        </div>
+                                                    </form>
+                                                <?php else : ?>
+                                                    <div class="card-text d-flex justify-content-center">
+                                                        <button class="btn btn-warning rounded-pill px-4 w-75 py-2"><i class="fa-solid fa-plus"></i> Order</button>
+                                                    </div>
+                                                <?php endif; ?>
                                             </div>
                                         </div>
                                     </div>
@@ -256,9 +340,21 @@
                                                     <div class="card-text d-flex justify-content-center mb-2">
                                                         <a href="<?= base_url('menu/' . str_replace(' ', '-', strtolower($all['name']))); ?>" class="btn btn-link rounded-pill px-4">Detail</a>
                                                     </div>
-                                                    <div class="card-text d-flex justify-content-center">
-                                                        <button class="btn btn-warning rounded-pill px-4 w-50 py-2"><i class="fa-solid fa-plus"></i> Order</button>
-                                                    </div>
+                                                    <?php if (isset($login_check) && $login_check['login_status']) : ?>
+                                                        <form>
+                                                            <div class="card-text d-flex justify-content-center">
+                                                                <input type="hidden" id="customer_id" name="customer_id" value="<?= $login_check['user']['customer_id']; ?>">
+                                                                <input type="hidden" id="customer_id" name="product_id" value="<?= $all['product_id']; ?>">
+                                                                <input type="hidden" id="customer_id" name="quantity" value="1">
+                                                                <input type="hidden" id="customer_id" name="status_cart" value="A">
+                                                                <button class="btn btn-warning rounded-pill px-4 w-75 py-2"><i class="fa-solid fa-plus"></i> Order</button>
+                                                            </div>
+                                                        </form>
+                                                    <?php else : ?>
+                                                        <div class="card-text d-flex justify-content-center">
+                                                            <button class="btn btn-warning rounded-pill px-4 w-75 py-2"><i class="fa-solid fa-plus"></i> Order</button>
+                                                        </div>
+                                                    <?php endif; ?>
                                                 </div>
                                             </div>
                                         </div>

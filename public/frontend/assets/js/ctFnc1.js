@@ -1,26 +1,11 @@
-var quantityMenu = 0;
-
-document.addEventListener('DOMContentLoaded', () => {
-    cartNav(url, hrefUrl, srcUrl);
-});
-
-const cartNav = async (url, hrefUrl, srcUrl) => {
-    try {
-        const response = await fetch(url, {
-            headers: {
-                "Content-Type": "application/json",
-                "X-Requested-With": "XMLHttpRequest"
-            }
-        });
-        var data = await response.json()
-        console.log(data)
-        showDataOnNavbar(data, hrefUrl, srcUrl)
-    } catch (err) {
-        console.log(err)
-    }
+async function crtFn(url, hrefUrl, srcUrl) {
+    const response = await fetch(url)
+    var data = await response.json()
+    console.log(data)
+    showData(data, hrefUrl, srcUrl)
 }
 
-function showDataOnNavbar(data, hrefUrl, srcUrl) {
+function showData(data, hrefUrl, srcUrl) {
     let willShow = ''
     let heightForItem;
     for (let eachData of data) {

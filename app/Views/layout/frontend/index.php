@@ -86,8 +86,12 @@
     <?php if (isset($login_check) && $login_check['login_status']) : ?>
         <script src="<?= base_url("frontend/assets/js/ctFnc.js") ?>"></script>
         <script>
-            ctFnc('<?= base_url('carts/' . $login_check['user']['customer_id']); ?>')
+            var baseUrl = "<?= base_url() ?>"
+            cartNav(baseUrl + "/carts/<?= $login_check['user']['customer_id'] ?>", baseUrl + "/cart", baseUrl + "/frontend/assets/img/test.png")
         </script>
+
+        <?php if (strtoupper($title) === "MENU") : ?>
+        <?php endif; ?>
     <?php endif; ?>
 </body>
 
