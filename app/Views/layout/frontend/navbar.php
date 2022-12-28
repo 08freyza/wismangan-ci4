@@ -22,6 +22,7 @@
                     <i class="fa-solid fa-cart-shopping text-white"></i>
                     <span class="text-white">Keranjang (4)</span>
                 </a>
+                <div id="cartval"></div>
                 <ul class="dropdown dropdown-menu mt-1 special-dropdown cart-dropdown py-2" style="right: -82px; width: 340px;">
                     <div class="row overflow-auto pe-0" style="height: 238px; width: 340px;">
                         <li class="p-0">

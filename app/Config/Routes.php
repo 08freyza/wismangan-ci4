@@ -44,6 +44,7 @@ $routes->get('/menu/(:any)', 'Frontend\Menu::detail/$1');
 $routes->get('/about', 'Frontend\About::index');
 $routes->get('/contact', 'Frontend\Contact::index');
 $routes->get('/profile', 'Frontend\User::index');
+$routes->resource('carts', ['controller' => 'Frontend\Cart']);
 $routes->get('/order', 'Frontend\Order::index');
 $routes->get('/order/payment', 'Frontend\Order::payment');
 $routes->get('/login', 'Frontend\Auth::login');

@@ -82,6 +82,13 @@
 
     <!-- Other JS Files -->
     <script src="<?= base_url("frontend/assets/js/mainMessage.js") ?>"></script>
+
+    <?php if (isset($login_check) && $login_check['login_status']) : ?>
+        <script src="<?= base_url("frontend/assets/js/ctFnc.js") ?>"></script>
+        <script>
+            ctFnc('<?= base_url('carts/' . $login_check['user']['customer_id']); ?>')
+        </script>
+    <?php endif; ?>
 </body>
 
 </html>
