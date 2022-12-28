@@ -32,7 +32,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Jost", sans-serif;
+    /* font-family: "Jost", sans-serif; */
+    font-family: 'Roboto', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -464,7 +465,7 @@ h6 {
     width: 100%;
     height: 100vh;
     /* background: #37517e; */
-    background: linear-gradient(rgba(89, 23, 1, 0.8), rgba(89, 23, 1, 0.8)), url(../img/bg-hero.jpg);
+    background: linear-gradient(rgba(49, 13, 1, 0.8), rgba(49, 13, 1, 0.8)), url(../img/bg-hero.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

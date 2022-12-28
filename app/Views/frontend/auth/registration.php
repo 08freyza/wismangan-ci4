@@ -107,7 +107,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12 mb-3">
-                                        <button type="submit" class="btn btn-primary rounded-pill px-3 w-100">Registrasi</button>
+                                        <button type="submit" class="btn btn-warning rounded-pill px-3 w-100">Registrasi</button>
                                     </div>
                                     <p class="form-text text-center">Sudah punya akun? Silakan login <a href="<?= base_url('/login') ?>">disini</a>.</p>
                                 </form>

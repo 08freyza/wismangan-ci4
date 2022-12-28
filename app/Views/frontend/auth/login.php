@@ -39,7 +39,7 @@
                                         <label class="form-check-label" for="rememberme">Ingat Saya</label>
                                     </div>
                                     <div class="mb-3">
-                                        <button type="submit" class="btn btn-primary rounded-pill px-3 w-100">Login</button>
+                                        <button type="submit" class="btn btn-warning rounded-pill px-3 w-100">Login</button>
                                     </div>
                                     <p class="form-text text-center">Anda belum punya akun? Silakan registrasi <a href="<?= base_url('/registration') ?>">disini</a>.</p>
                                 </form>
