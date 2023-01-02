@@ -2,13 +2,14 @@
 function productType()
 {
     $data = [
+        'AL' => 'Semua',
         'SP' => 'Sarapan Pagi',
-        'MU' => 'Makanan Utama',
+        'MU' => 'Hidangan Utama',
         'MA' => 'Masakan Ayam',
         'MI' => 'Masakan Ikan',
-        'S' => 'Sup',
+        'SO' => 'Sup',
         'HP' => 'Hidangan Penutup',
-        'M' => 'Minuman'
+        'MN' => 'Minuman'
     ];
 
     return $data;

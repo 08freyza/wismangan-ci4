@@ -30,6 +30,7 @@ class Menu extends BaseController
             'navbar_active' => 'Menu',
             'login_check' => loginCheck(),
             'data' => $selectAllData,
+            'product_type_text' => productType(),
         ];
 
         return view('frontend/menu/menu', $data);
@@ -47,7 +48,7 @@ class Menu extends BaseController
 
         $data = [
             'title' => $selectData['name'],
-            'navbar_active' => $selectData['name'],
+            'navbar_active' => 'Menu',
             'login_check' => loginCheck(),
             'data' => $selectData,
             'product_type_text' => productType(),

@@ -81,16 +81,11 @@
     <script src="<?= base_url("frontend/assets/js/main.js") ?>"></script>
 
     <!-- Other JS Files -->
-    <script src="<?= base_url("frontend/assets/js/mainMessage.js") ?>"></script>
-
+    <script src="<?= base_url("frontend/assets/js/@file/messages/mainMessage.js") ?>"></script>
     <?php if (isset($login_check) && $login_check['login_status']) : ?>
-        <script src="<?= base_url("frontend/assets/js/ctFnc.js") ?>"></script>
-        <script>
-            var baseUrl = "<?= base_url() ?>"
-            cartNav(baseUrl + "/carts/<?= $login_check['user']['customer_id'] ?>", baseUrl + "/cart", baseUrl + "/frontend/assets/img/test.png")
-        </script>
-
-        <?php if (strtoupper($title) === "MENU") : ?>
+        <script type="module" src="<?= base_url("frontend/assets/js/fcrtnv.js") ?>"></script>
+        <?php if (strtolower($title) === "menu") : ?>
+            <script type="module" src="<?= base_url("frontend/assets/js/faucrt.js") ?>"></script>
         <?php endif; ?>
     <?php endif; ?>
 </body>

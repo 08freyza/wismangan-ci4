@@ -264,78 +264,82 @@
 
   // Toogle Eye Icon Password
 
-  const togglePassword = document.querySelector('#togglePassword');
-  const toggleConfirmPassword = document.querySelector('#toggleConfirmPassword');
-  const password = document.querySelector('#password');
-  const confirmPassword = document.querySelector('#confirmpassword');
+  try {
+    const togglePassword = document.querySelector('#togglePassword');
+    const toggleConfirmPassword = document.querySelector('#toggleConfirmPassword');
+    const password = document.querySelector('#password');
+    const confirmPassword = document.querySelector('#confirmpassword');
+    
+    togglePassword.addEventListener('click', () => {
+      const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+      password.setAttribute('type', type);
   
-  togglePassword.addEventListener('click', () => {
-    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-    password.setAttribute('type', type);
-
-    const className =  togglePassword.className === 'bi bi-eye' ? 'bi bi-eye-slash' : 'bi bi-eye';
-    togglePassword.setAttribute('class', className);
-  });
-
-  toggleConfirmPassword.addEventListener('click', () => {
-    const type = confirmPassword.getAttribute('type') === 'password' ? 'text' : 'password';
-    confirmPassword.setAttribute('type', type);
-
-    const className =  toggleConfirmPassword.className === 'bi bi-eye' ? 'bi bi-eye-slash' : 'bi bi-eye';
-    toggleConfirmPassword.setAttribute('class', className);
-  });
-
-  // is-invalid class on password
-
-  const isInvalidClass = document.querySelector('.is-invalid');
-  const firstName = document.querySelector('#firstname');
-  const lastName = document.querySelector('#lastname');
-  const email = document.querySelector('#email');
-  const username = document.querySelector('#username');
-
-  if(isInvalidClass) {
-    firstName.addEventListener('input', () => {
-      const isInvalid = firstName
-      isInvalid.classList.remove("is-invalid")
+      const className =  togglePassword.className === 'bi bi-eye' ? 'bi bi-eye-slash' : 'bi bi-eye';
+      togglePassword.setAttribute('class', className);
     });
-
-    lastName.addEventListener('input', () => {
-      const isInvalid = lastName
-      isInvalid.classList.remove("is-invalid")
+  
+    toggleConfirmPassword.addEventListener('click', () => {
+      const type = confirmPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+      confirmPassword.setAttribute('type', type);
+  
+      const className =  toggleConfirmPassword.className === 'bi bi-eye' ? 'bi bi-eye-slash' : 'bi bi-eye';
+      toggleConfirmPassword.setAttribute('class', className);
     });
-
-    email.addEventListener('input', () => {
-      const isInvalid = email
-      isInvalid.classList.remove("is-invalid")
-    });
-
-    username.addEventListener('input', () => {
-      const isInvalid = username
-      isInvalid.classList.remove("is-invalid")
-    });
-
-    password.addEventListener('input', () => {
-      const isInvalid = password
-      const eyeIcon = togglePassword
-      isInvalid.classList.remove("is-invalid")
-      eyeIcon.setAttribute('class', 'bi bi-eye');
-    });
-
-    confirmPassword.addEventListener('input', () => {
-      const isInvalid = confirmPassword
-      const eyeIcon = toggleConfirmPassword
-      isInvalid.classList.remove("is-invalid")
-      eyeIcon.setAttribute('class', 'bi bi-eye');
-    });
+    
+    // is-invalid class on password
+  
+    const isInvalidClass = document.querySelector('.is-invalid');
+    const firstName = document.querySelector('#firstname');
+    const lastName = document.querySelector('#lastname');
+    const email = document.querySelector('#email');
+    const username = document.querySelector('#username');
+  
+    if(isInvalidClass) {
+      firstName.addEventListener('input', () => {
+        const isInvalid = firstName
+        isInvalid.classList.remove("is-invalid")
+      });
+  
+      lastName.addEventListener('input', () => {
+        const isInvalid = lastName
+        isInvalid.classList.remove("is-invalid")
+      });
+  
+      email.addEventListener('input', () => {
+        const isInvalid = email
+        isInvalid.classList.remove("is-invalid")
+      });
+  
+      username.addEventListener('input', () => {
+        const isInvalid = username
+        isInvalid.classList.remove("is-invalid")
+      });
+  
+      password.addEventListener('input', () => {
+        const isInvalid = password
+        const eyeIcon = togglePassword
+        isInvalid.classList.remove("is-invalid")
+        eyeIcon.setAttribute('class', 'bi bi-eye');
+      });
+  
+      confirmPassword.addEventListener('input', () => {
+        const isInvalid = confirmPassword
+        const eyeIcon = toggleConfirmPassword
+        isInvalid.classList.remove("is-invalid")
+        eyeIcon.setAttribute('class', 'bi bi-eye');
+      });
+    }
+  
+    // Cart dropdown won't be showed on mobile mode
+    let cartDropdown = document.querySelector('.cart-dropdown')
+  
+    if (select('#navbar').classList.contains('navbar-mobile')) {
+      cartDropdown.classList.add('d-block')
+    } else {
+      cartDropdown.classList.remove('d-block')
+    }
+  } catch (error) {
+    console.log("Just ignore this, bro! Don't worry :)")
+    // console.log("Isi error : ", error)
   }
-
-  // Cart dropdown won't be showed on mobile mode
-  let cartDropdown = document.querySelector('.cart-dropdown')
-
-  if (select('#navbar').classList.contains('navbar-mobile')) {
-    cartDropdown.classList.add('d-block')
-  } else {
-    cartDropdown.classList.remove('d-block')
-  }
-
 })()

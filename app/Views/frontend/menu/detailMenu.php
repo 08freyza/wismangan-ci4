@@ -24,7 +24,9 @@
                                 <?php $type = explode(',', $data['product_type']); ?>
                                 <br>
                                 <?php foreach ($type as $product_type) : ?>
-                                    <div class="btn btn-primary rounded-pill px-3 py-1 me-1 mb-1" style="cursor: default; width: 175px;"><?= $product_type_text[$product_type]; ?></div>
+                                    <?php if ($product_type !== 'AL') : ?>
+                                        <div class="btn btn-primary rounded-pill px-3 py-1 me-1 mb-1" style="cursor: default; width: 175px;"><?= $product_type_text[$product_type]; ?></div>
+                                    <?php endif; ?>
                                 <?php endforeach; ?>
                             </div>
                             <div class="col-md-12 mt-2">
